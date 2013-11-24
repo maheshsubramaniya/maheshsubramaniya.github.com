@@ -13,7 +13,7 @@ Follow me at <a href="http://twitter.com/mymindleaks" rel="me" itemprop="url">Tw
 
 ### Web Applictions ###
 
-* <a href="http://www.dealsnerd.com" itemprop="url"><img src="http://www.dealsnerd.com/images/deals-nerd.png"></a> - A completely new way to search for deals and watch for it. Seamlessly integerates with Google, just login with Google to maintain watchlist.
+<a href="http://www.dealsnerd.com" itemprop="url"><img src="http://www.dealsnerd.com/images/deals-nerd.png"></a> - A completely new way to search for deals and watch for it. Seamlessly integerates with Google, just login with Google to maintain watchlist.
 
 ### Projects ###
 
