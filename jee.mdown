@@ -1,0 +1,9 @@
+---
+layout: static
+title: Java/J2EE
+---
+<ul id="archive">
+{% for post in site.categories.jee %}
+<li><a href="{{ post.url }}">{{ post.title }}</a> - <em>{{ post.date | date_to_string }}</em></li>
+{% endfor %}
+</ul>

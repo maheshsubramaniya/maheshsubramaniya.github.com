@@ -1,0 +1,68 @@
+---
+layout: post
+title: Session Affinity - Requests processed by same machine in a distributed environment.
+author: Mahesh Subramaniya
+categories: ['distributed']
+---
+
+**Session Affinity** is a technique ( *at the server side* ) which directs the request from the **same client **to the last processed server component(Application server). This is also known as **Sticky Session**. 
+
+This is something like a Customer-Waitress model. Whenever you go to a restaraunt, for your table, there will be a seperate 'Waitress' for you to serve. So, what is advantage of this model?
+
+ * One single point of contact
+ * You know whom to ask when you need something
+ * Your waitress remembers your order sequence.
+
+The cons,  after taking order, When waitress is not available due to some reasons and you get a new waitress, you have to re-iterate all your orders, priority, and any other ad-hoc requests etc., And to make things still worst, your waitress keep changing after your order is taken ;-) I know how it feels.
+
+Lack of redundancy of information poses these kind of issues to not only to mankind, even to computers. But the above said situation is not going to happen so frequently like explained at the last line.
+
+Now let us assume that the restaraunt has only ***two waitresses*** to server the entire group of customers. Now if you make the information redundant, then all the waitresses will be bloated with too many information, keep note of 
+adhoc orders or requests and to worst situations like serving wrong people with wrong orders etc., Increase the stress, the waitresses efficiency drops. 
+
+This is not only true for humans, for computers too. computers ( i.e app servers) are configured for handling a threshold of requests and processing time.
+
+When a web client ( your web browser or a application which makes HTTP calls), is served by more than one computer on the other side, and hunderds and thousands of such requests hit those fixed number of servers every second? Not all servers can remember all the details of incoming clients. Making remember information by all server is good for fail-proof, but it isn't going to happen so frequently, so that all your computers needs to be synced with latest information minute to minute. So, fail-proof and redundancy is a secondary issue. The primary issue is, how to keep the ervers peaceful and stress-less so that it can do it's job good. How do we solve this issue?
+
+This applies equally to the computers today. Instead of you, your browser take the requests and stand in the queue. But still the Bank has to make sure it implements the same rule to their computers as well. Why?
+
+1. Doing the same process costs CPU cycles for Bank - more CPU, more power & resources.
+2. The HTTP model of web, doesnt have State to remember your computer's previous requests. 
+3. When a node processing your request crashes, all the time, CPU cycle spent are waste and hence entire process needs to be started again.
+
+Hence, to implement this policy, application server has to solve these issues
+
+* How to identify and route which teller machine has served the previous request?
+
+* How to make teller machines remember the past transactions of a client?
+
+To identify the client for subsequent request for a session, the application server software will give the client a unique '*token-identifer*', which must be presented everytime a request has to be served. And next time the browser comes up with a request, the Load Balancer and Application Server Cluster software will identify the client and maps the client to a teller node which has served the previous request. This above two steps allows to achieve what we want as '**Session Affinity**'
+
+
+### How Session Affinity helps?
+
+
+**Session Affinity** is a pretty neat and simple idea something like holding your teller. Between a Client and Web Application, the softwares known as Load Balancer and the Application Server Cluster work together to send your browser's request to the same node which processed the previous request. If the node is busy processing other request, a minimum wait time will be honored and your request will be sent to another node, with all the authentication details, so that the node knows that your browser is authenticated to get the request done..
+
+This is like, you speak to the same customer service rep for that particular call session. Think of how it will be, if you get a new customer service represenattive answer each of your question? Well, it will be good as far as they don't ask you to verify the identity again and again.
+
+Session Affinity, does something similar to this. Once a request is been handled by a particular system, the Application Server, continues to route all the subsequent request from the same client to same system for that particular session.
+
+This concept is around the application development for over 20+ years
+
+If you have watched the client's data submission to server, you might have seen a name **JSESSIONID**. Have you ever wondered what is **JSESSIONID** either in the COOKIE or URL param that you see in your HTTP Request (sometime as POST param ). If not, it's time to realize that JSESSIONID is used by the Application Servers to Maintain the Session Affinity. JSESSIONID looks something like this
+    0000rV9j4p85a-nXfaU8AUJQmjS:15rfoh2nd
+
+#### Sample plugin-cfg.xml
+
+<script src="https://gist.github.com/1680442.js?file=plugin-cfg.xml"></script>
+
+JSESSIONID is maintained either as Cookie or as URL parameter, depends on the client. If the Client is not ready to accept cookie, then the app server has to track the [session id](http://www.w3.org/TR/WD-session-id.html) via URL param.
+
+
+	<Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/hello"/>
+
+
+IBM has a detailed [plugin-cfg xml](http://publib.boulder.ibm.com/infocenter/iseries/v5r3/topic/rzatz/51/admin/admpluginsamp.htm "Plugin-CFG.xml file") file sample.
+
+In contrary to Load Balancer, Session Affinity overrides the work of load balancer. This primary work of the load balancer is to make sure that the requests coming from clients are balanced and sent to the available nodes ( or systems ). But session affinity overrides this and works accordingly. But today's Load Balancers are engineered to work hand-in-hand with the Session Affinity concept.

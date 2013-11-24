@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	{% include header.html %}
+</head>
+<body>
+
+
+<div id="wrapper" class="site">
+
+
+	<section id="left">
+
+		<header>
+			<h1 itemtype="http://schema.org/Blog"><a title="Mahesh Subramaniya" rel="home" itemprop="url" href="{{site.url}}"><span itemprop="author">{{site.site_name}}</span><a/></h1>  
+			<em><h4 id="blog-description">{{site.sub_title}}</h4></em>
+		</header><!--  #header -->
+		
+		<div>
+				<a target="tab2" rel="me" href="http://twitter.com/mymindleaks" class="social twitter"></a>
+				<a target="tab3" rel="me" href="https://plus.google.com/103292685573052281213" class="social gplus"></a>
+				<a target="tab3" rel="alternate" href="http://feeds.feedburner.com/mymindleaks" class="social rss"></a>
+				
+		</div>
+
+		<nav>
+			<ul id="home-menu" class="nav" >
+				<li itemscope itemtype="http://schema.org/Person"><a href="/" rel="me" itemprop="url">Home</a></li>
+				<li itemscope itemtype="http://schema.org/Person"><a href="/about.html" rel="me" itemprop="url">About</a></li>
+				<li itemscope itemtype="http://schema.org/CreativeWork"><a href="http://github.com/mymindleaks" itemprop="url">Github</a></li>
+				<li itemscope itemtype="http://schema.org/CreativeWork"><a href="/archives.html" itemprop="url">Archives</a></li>
+				<li itemscope itemtype="http://schema.org/CreativeWork"><a href="/projects.html" itemprop="url">Projects</a></li>
+			</ul>
+		</nav>
+
+
+		<nav>
+			<h3>Recent Posts</h3>
+
+			<ul class="recent" itemscope itemtype="http://schema.org/Blog">
+			{% for post in site.posts limit:5 %}
+	  			<li><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></li>
+			{% endfor %}
+			</ul>
+
+		</nav>
+
+		<div id="search">
+			<gcse:searchbox-only></gcse:searchbox-only>
+		</div>
+
+<script>
+
+	    function load_notice()
+	    {
+
+	        var notice_cookie = cookie.get("notice_cookie");
+	        
+	        if(notice_cookie == null)
+	        {
+	             
+	        cookie.set("notice_cookie",true);
+
+	        var notice_text = "<div class='pin'></div>{% include notice.html %}";
+	        var notice_el = document.getElementById("notice");
+	        notice_el.innerHTML += notice_text;
+	        notice_el.className = "notice";
+
+	        /* hide the notice after 5 mins and never display again for the same user*/
+	        setTimeout("hide_notice()", 2 * 60 * 1000 );
+
+	        }
+
+	    }
+
+	    function hide_notice()
+	    {
+	        var notice_el = document.getElementById("notice");
+	        if( notice_el ) notice_el.className = "hidden";
+	    }
+
+
+	    setTimeout("load_notice()", 500);
+	  </script>
+
+	  <div id="notice"></div>
+		
+		
+	</section>
+
+	<section id="right">
+		{{ content }}
+	</section>
+
+  
+	<footer>
+		<hr/>
+		All thoughts &amp; articles that I have written here are from my mind, unless explicitly mentioned. <br/>
+		<a href="{{site.url}}" title="Mahesh Subramaniya" rel="footer"  id="blog-title">
+			<em>{{site.name}}<em> (Copyrights 2004 - 2012 ) </a>
+			
+			<div class="sequence">
+				<p>
+					<a href="http://validator.w3.org/check?uri=referer">
+					<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+				</p>
+			</div>
+			
+	</footer>
+
+</body>
+
+<!-- Site Meter -->
+
+		<script type="text/javascript" src="http://s44.sitemeter.com/js/counter.js?site=s44mymindleaks"></script>
+
+		<noscript>
+
+			<a href="http://s44.sitemeter.com/stats.asp?site=s44mymindleaks" target="_top">
+
+			<img src="http://s44.sitemeter.com/meter.asp?site=s44mymindleaks" alt="Site Meter" border="0"/></a>
+
+		</noscript>
+
+		<!-- Copyright (c)2006 Site Meter -->
+
+
+</html>
