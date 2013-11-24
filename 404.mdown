@@ -1,6 +1,0 @@
----
-layout: static
-title: 404
----
-
-404
