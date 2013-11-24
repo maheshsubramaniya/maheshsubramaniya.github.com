@@ -1,0 +1,22 @@
+destination: ./_site
+auto: true
+lsi: false
+server_port: 4000
+pygments:    true
+markdown: rdiscount
+pygments: true
+permalink:   /article/:title.html
+url: http://www.maheshsubramaniya.com
+personal_blog: http://ms.maheshsubramaniya.com
+site_name: Mahesh Subramaniya
+sub_title: Programming & Software Architecture
+author: Mahesh Subramaniya
+google_robots: noodp, noydir
+tags: J2EE, J2EE Frameworks, Enterprise Architecture, Distributed, Cloud Computing, Performance
+paginate: 3
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_dir:    images/latex
+  png_url:    /images/latex

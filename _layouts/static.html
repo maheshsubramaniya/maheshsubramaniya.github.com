@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div id="static">
+<h2>{{ page.title }}</h2>
+
+{% if page.title == 'About' %}
+	<div itemscope itemtype="http://data-vocabulary.org/Person">
+{% else %}
+	<div>
+{% endif %}
+    	{{ content }}
+    </div>
+</div>
+

@@ -1,0 +1,12 @@
+---
+layout: post
+title: Even Mac can get viruses too – iWork 2009
+categories: ['misc']
+---
+<a href="http://www.youtube.com/watch?v=M3Z386vXrt4">Mac is Immune to Virus.</a> This is globally acclaimed status until the <a href="http://www.intego.com/news/ism0901.asp">iWork' 09 worm</a> infused into the <a href="{{site.url}}/tag/mac/">Mac</a>. So this tell you none of the OS in the world is immune to virus analogous to no human is immune to any virus. But the difference is, until we are healthy and cautious no external objects affects our body. Same thing for OSes too. Mac doesnt accept any executables to run without users notice, unlike PC.  Though a nice writeup from 'the How-to-Geek' <a href="http://feeds.howtogeek.com/~r/HowToGeek/~3/Txu4Y3AY778/">Even Mac's can get viruses</a>,  '<a href="http://www.howtogeek.com">the How-to-Geek</a>' mostly writes on the PC tips, tweaks and tricks, so there is no wonder that he writes about the Mac when Mac fails ( no offense here :-) ).
+
+The <a href="http://en.wikipedia.org/wiki/Trojan_horse_(computing)">trojan</a> is installed as a <strong>"Start up"</strong> service in in <a href="http://www.insanelymac.com/iwork-09-trojan-beware/"><strong>/System/Library/StartupItems/iWorkServices</strong></a>, a location reserved normally for Apple startup items.
+
+[caption id="attachment_732" align="aligncenter" width="884" caption="Screenshot: A clean iWork installation will not have the &#39;iWorkServices&#39; in the startup folder"]<img class="size-large wp-image-732" title="iworkstartup-screenshot" src="../images/2009/04/iworkstartup-screenshot-1024x444.png" alt="iworkstartup-screenshot" width="884" height="383" />[/caption]
+<p style="text-align: left;">Though the fix for this trojan has not been around, it's true that the trojan turns the infected Macs into <a href="http://en.wikipedia.org/wiki/Zombie">Zombies</a>. But still  Mac is much better than PC in stopping the viruses. It's true that Mac cant claim that it is not affected with virus, but still it holds a proud position of having lesser viruses compared to the <a href="http://www.networkworld.com/news/2008/040408-number-of-viruses-to-top.html">PC's large virus base</a>.</p>
+<p style="text-align: left;">So, Mac users though you download the pirated software, make sure that you run through the anti-virus softwares.That keeps your mac health and of course you too  :-)</p>
