@@ -2,7 +2,7 @@
 layout: static
 ---
 
-I'm Mahesh Subramaniya, programmer by profession and passion. My today's career has been started as a hobby, when I was introduced to computers at my 7th Class in school. Started to get my hands dirty with [LOGO](http://en.wikipedia.org/wiki/Logo_(programming_language), [BASIC](http://en.wikipedia.org/wiki/BASIC "BASIC") and [MS-DOS](http://en.wikipedia.org/wiki/MS-DOS) and till date keep programming with [Java](http://en.wikipedia.org/wiki/Java_(programming_language)), [Python](http://docs.python.org/), [Ruby](http://www.ruby-lang.org/en/documentation/), Javascripts etc.,. 
+I'm Mahesh Subramaniya, programmer by profession and passion. My today's career has been started as a hobby, when I was introduced to computers at my 7th Class in school. Started to get my hands dirty with [LOGO](http://en.wikipedia.org/wiki/Logo_(programming_language), [BASIC](http://en.wikipedia.org/wiki/BASIC "BASIC") and [MS-DOS](http://en.wikipedia.org/wiki/MS-DOS) and till date keep programming with Java, Python, Javascripts etc.,. 
 
 My interests started with compilers and web and now solving some complex problems in Enterprises.
 
@@ -13,7 +13,7 @@ Follow me at <a href="http://twitter.com/mymindleaks" rel="me" itemprop="url">Tw
 
 ### Web Applictions ###
 
-* <a href="www.dealsnerd.com" itemprop="url">DealsNerd</a> - A completely new way to search for deals and watch for it. Seamlessly integerates with Google, just login with Google to maintain watchlist.
+* <a href="http://www.dealsnerd.com" itemprop="url"><img src="http://www.dealsnerd.com/images/deals-nerd.png"></a> - A completely new way to search for deals and watch for it. Seamlessly integerates with Google, just login with Google to maintain watchlist.
 
 ### Projects ###
 
