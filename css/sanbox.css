@@ -1,5 +1,4 @@
-
-*
+body
 {
 	font-family:Cambria,Calibri,"Century Schoolbook",Arial,"Times New Roman";
 	line-height: 22px;
@@ -53,6 +52,15 @@ a
 	color:#000;
 }
 
+/* decorate all links in article */
+div.entry-content a, #about a
+{
+
+    background-color: rgba(235, 235, 132, 0.43);
+    text-decoration: none;
+    border-bottom: 1px dashed blue;
+
+}
 
 /*
 
@@ -126,8 +134,12 @@ div.line > *
 
 #right
 {
-	width: 700px;
+	width: 500px;
 	margin-left:320px;
+	border-left: 2px solid #CCC;
+	padding-left: 20px;
+	text-align:justify;
+
 }
 
 
@@ -173,6 +185,15 @@ nav ul.recent
 {
 	margin: 0;
 	padding:  0;
+}
+
+article
+{
+	color:#444444
+	font-family: "Palatino,Georgia,serif";
+	font-size:18px;
+	line-height:28px;
+	text-align:justify;
 }
 
 article h1
@@ -295,7 +316,7 @@ text-align:center;
 
 figure, figcaption
 {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 
@@ -320,3 +341,31 @@ div.pagination
 {
 	font-size: 120%;
 }
+
+
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+    font-size: 4em;
+}
+blockquote p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+#disqus_thread
+{
+	width: 500px;
+}
+
