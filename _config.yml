@@ -8,12 +8,16 @@ pygments: true
 permalink:   /article/:title.html
 url: http://www.maheshsubramaniya.com
 site_name: Mahesh Subramaniya
-sub_title: Programming &amp; Software Architecture
+sub_title: engineer, developer, photographer, coffee lover
 author: Mahesh Subramaniya
 google_robots: noodp, noydir
 tags: J2EE, J2EE Frameworks, Enterprise Architecture, Distributed, Cloud Computing, Performance
-paginate: 3
+paginate: 10
 twitter_id: mymindleaks
+excerpt_separator: ""
+url_photo: http://500px.com/maheshsubramaniya
+url_food: food.html
+url_tamil: tamil.html
 
 maruku:
   use_tex:    false

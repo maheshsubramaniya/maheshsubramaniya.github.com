@@ -3,6 +3,9 @@ layout: post
 title: Unclutter your Google Reader
 categories: ['misc']
 ---
+
+_Thanks to Adam Pash for mentioning this post in [LifeHacker](http://lifehacker.com/5040090/unclutter-google-reader-by-analyzing-your-trends)_
+
 I'm a fan of various blogs and have a habit of subscribing to the feeds of the blogs and sites which I like to read it daily. But over a period of time, my Google Reader got piled up with the lots of RSS feeds. So, now I've a difficult time to read each and every RSS items. And most of the news items seems to be duplicated over various blogs and sites.
 
 If you are a beginner to the internet and blog world, you would just have started your subscription and all you have to do is just to know <a title="Know how to manage the Google reader subscriptions" href="http://www.maheshsubramaniya.com/google/drag-n-drop-to-organize-your-feeds-in-google-reader/">how to manage the subscriptions</a>. But for the advanced readers and the blog addicts, piling of the feeds will happen frequently. Now it is the high time for me to clean up my RSS shelf.

@@ -2,38 +2,39 @@
 layout: default
 ---
 
+<article class="homepage post">
+	<header class="post-header">
+		  <h2>{{ page.title }}</h2>
+	</header>
+	<p>{{ content }}</p>
 
-<div itemscope itemtype="http://schema.org/Blog">
+  	<footer >
 
-	<article id="post">
 
-		<h1 class="title"><span  itemprop="name">{{ page.title }}</span>&nbsp;<a title="Permalink for {{ page.title }}" href="{{page.url}}" itemprop="url" class="permalink">&#x2693;</a></h1>
+<a class="punch" href="https://twitter.com/intent/tweet?text=Nice Read: {{ page.title }}&url={{site.url}}{{page.url}}&via={{site.twitter_id}}">
+	<span style="
+	    background: url('https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_32.png') no-repeat 0 0;
+	    width: 32px;
+	    height: 32px;
+	    display: block;
+	    float: left;
+	    margin-left: 10px;
+	"></span>
+	<span style="
+	    float: left;
+	    margin-left: 10px;
+	">I like it</span>
+	</a>
 
-		<div class="date"><time itemprop="datePublished" datetime="{{page.date}}">{{page.date | date_to_string }}</time></div>
-		
-		<div class="entry-content" itemprop="blogPost">
-		{{ content  }}
-		</div>
+		<small class="right">	
+			Published on: <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+		</small>
 
-		<h5>- by <span itemprop="author">Mahesh Subramaniya</span></h5>
-		
-	</article>
+	<div id="disqus_thread"></div>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  		
 
-</div>
+  	</footer>
+</article>
 
-<hr/>
-
-{% comment %}
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-	var disqus_shortname = 'mymindleaks'; // required: replace example with your forum shortname
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-{% endcomment %}
 

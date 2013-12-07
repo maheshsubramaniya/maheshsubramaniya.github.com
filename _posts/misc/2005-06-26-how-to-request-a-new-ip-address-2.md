@@ -3,6 +3,19 @@ layout: post
 title: How to Request a New IP address?
 categories: ['misc']
 ---
-Moved to new blog <a href="http://www.maheshsubramaniya.com/windows-xp/how-to-request-a-new-ip-address">http://www.maheshsubramaniya.com/windows-xp/how-to-request-a-new-ip-address</a>
 
-<a href="http://www.maheshsubramaniya.com">My Mind Leaks </a>is no more in Wordpress.
+Request a new IP address from your ISP server.
+
+Here’s how to do it in windows:
+1. Click Start
+2. Click run
+3. In the run box type cmd.exe and click OK
+4. When the command prompt opens type the following. ENTER after each new line.
+
+<code>
+<pre>
+ipconfig /flushdns
+ipconfig /release
+ipconfig /renew
+</pre>
+</code>

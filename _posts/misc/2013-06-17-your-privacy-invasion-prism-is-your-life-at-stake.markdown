@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Your privacy invasion - Is your life at stake?
+excerpt: Discuss about the recent PRISM exposure and our privacy linked to it
 categories: ['misc']
 ---
 

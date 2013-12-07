@@ -7,123 +7,144 @@
 <body>
 
 
-<div id="wrapper" class="site">
+	<section id="titlebar">
+
+		<div class="row">
+
+			<div class="large-offset-1 columns">
+
+				<div class="large-1 columns">
+					<!-- <a href="/" class="mahesh-icon" title="{{site.site_name}}"></a> -->
+					<a href="/"  class="twitter-profile-icon" data-original-title="Mahesh Subramaniya">
+					        <img src="https://pbs.twimg.com/profile_images/287366742/pro-head_bigger.jpeg" alt="Mahesh Subramaniya" class="avatar size73">
+					</a>
+				</div>
 
 
-	<section id="left">
+				<div class="large-11 columns site-title">
+					<h1>
+						{{site.site_name}}
+					</h1>
+					
+					<h5 class="tagline">{{site.sub_title}}</h5>
+					<h5 class="contact-line">
+						<a href="http://www.twitter.com/{{site.twitter_id}}" title="{{site.twitter_id}}">@{{site.twitter_id}}</a> |
+						<a href="https://plus.google.com/+MaheshSubramaniya" title="+MaheshSubramaniya">+MaheshSubramaniya</a> 	
+					</h5>
 
-		<header>
-			<h1 itemtype="http://schema.org/Blog"><a title="Mahesh Subramaniya" rel="home" itemprop="url" href="{{site.url}}"><span itemprop="author">{{site.site_name}}</span><a/></h1>  
-			<em><h4 id="blog-description">{{site.sub_title}}</h4></em>
-		</header><!--  #header -->
-		
-		<div>
-				<a target="tab2" rel="me" href="http://twitter.com/mymindleaks" class="social twitter"></a>
-				<a target="tab3" rel="me" href="https://plus.google.com/+MaheshSubramaniya" class="social gplus"></a>
-				<a target="tab3" rel="alternate" href="{{site.url}}/atom.xml" class="social rss"></a>
-				
-		</div>
-
-		<nav>
-			<ul id="home-menu" class="nav" >
-				<li itemscope itemtype="http://schema.org/Person"><a href="/" rel="me" itemprop="url">Home</a></li>
-				<li itemscope itemtype="http://schema.org/Person"><a href="/about.html" rel="me" itemprop="url">About</a></li>
-				<li itemscope itemtype="http://schema.org/CreativeWork"><a href="http://github.com/mymindleaks" itemprop="url">Github</a></li>
-				<li itemscope itemtype="http://schema.org/CreativeWork"><a href="/archives.html" itemprop="url">Archives</a></li>
-				<li itemscope itemtype="http://schema.org/CreativeWork"><a href="/projects.html" itemprop="url">Projects</a></li>
-			</ul>
-		</nav>
+					<div >
 
 
-		<nav>
-			<h3>Recent Posts</h3>
+					<div  class="nav-icons">
+					
+						<a href="/" class="round-home-icon" title="Home - Mahesh Subramaniya"></a>
+						<a href="/posts.html" class="all-posts-icon" title="All Posts"></a>
+						<a href="/about.html" class="round-about-icon" title="About Mahesh Subramaniya"></a>
+						
 
-			<ul class="recent" itemscope itemtype="http://schema.org/Blog">
-			{% for post in site.posts limit:5 %}
-	  			<li><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></li>
-			{% endfor %}
-			</ul>
+						<a href="http://www.twitter.com/{{site.twitter_id}}" class="round-twitter-icon" title="{{site.twitter_id}}"></a>
 
-		</nav>
+						<a href="https://plus.google.com/+MaheshSubramaniya" class="round-gplus-icon" title="+MaheshSubramaniya"></a> 	
 
-		<div id="search">
-			<gcse:searchbox-only></gcse:searchbox-only>
-		</div>
+						<a href="https://github.com/mymindleaks" class="round-github-icon" title="Github - mymindleaks"></a> 	
 
-<script>
+						<a href="{{site.url_photo}}" class="round-photos-icon" title="Photos"></a> 	
 
-	    function load_notice()
-	    {
+						<!-- <a href="{{site.url_food}}" class="round-cooking-icon" title="Cooking"></a> 	 -->
 
-	        var notice_cookie = cookie.get("notice_cookie");
-	        
-	        if(notice_cookie == null)
-	        {
-	             
-	        cookie.set("notice_cookie",true);
+						<a href="{{sie.url}}/feeds.html" class="round-rss-icon" title="Feed"></a> 	
+					</div>
+						<div class="" id="searchbox" style="">
+							<form>
+								<input type="text" id="st-search-input" class="st-search-input" style="/* margin-top: 0.6em; */ /* margin-left: -5em; */ height: 30px; /* outline: none; */ /* width: 102px; */" autocomplete="off" autocorrect="off" autocapitalize="off">
+							</form>				
+						</div>
 
-	        var notice_text = "<div class='pin'></div>{% include notice.html %}";
-	        var notice_el = document.getElementById("notice");
-	        notice_el.innerHTML += notice_text;
-	        notice_el.className = "notice";
-
-	        /* hide the notice after 5 mins and never display again for the same user*/
-	        setTimeout("hide_notice()", 2 * 60 * 1000 );
-
-	        }
-
-	    }
-
-	    function hide_notice()
-	    {
-	        var notice_el = document.getElementById("notice");
-	        if( notice_el ) notice_el.className = "hidden";
-	    }
+					</div>
 
 
-	    setTimeout("load_notice()", 500);
-	  </script>
 
-	  <div id="notice"></div>
-		
-		
-	</section>
-
-	<section id="right">
-		{{ content }}
-	</section>
-
-  
-	<footer>
-		<hr/>
-		All thoughts &amp; articles that I have written here are from my mind, unless explicitly mentioned. <br/>
-		<a href="{{site.url}}" title="Mahesh Subramaniya" rel="footer"  id="blog-title">
-			<em>{{site.name}}<em> (Copyrights 2004 - 2012 ) </a>
-			
-			<div class="sequence">
-				<p>
-					<a href="http://validator.w3.org/check?uri=referer">
-					<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
-				</p>
+				</div>
 			</div>
+		</div>
+
+	</section>
+
+	<section id="searchresults">
+		<div class="row">
+			<div class="large-offset-1 columns">
+				<div id="st-results-container"></div>		
+			</div>
+		</div>
+
+	</section>
+
+	<section id="content">
+
+		<div class="row">
+			<div class="columns">
+				{{ content }}
+			</div>
+		</div>
+
+	</section>
+
+	<footer id="footer">
+		<div class="center" style="text-align:center;">
 			
+		    <ul class="menu" >
+		      <li></li>
+		      <li><a href="/" title="Home">Home</a></li>
+		      <li><a href="/about.html" title="About">About</a></li>
+		      <li><a href="/posts.html" title="About">Posts</a></li>
+		      <li><a href="{{site.url_photo}}" title="Photography">Photography</a></li>
+		      <!-- <li><a href="/{{site.url_food}}" title="Food &amp; Cooking">Food &amp; Cooking</a></li> -->
+		      <li><a href="/{{site.url_tamil}}" title="தமிழ்">தமிழ்</a></li>
+		      <li><a href="/contact.html" title="Contact">Contact Me</a></li>
+		    </ul>
+		    <small>© {{site.author}} - 2004 to today</small>
+		  </div>
 	</footer>
 
 </body>
 
-<!-- Site Meter -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#search").on('click',function(){$('#searchbox').toggle();})
+	})
+</script>
 
-		<script type="text/javascript" src="http://s44.sitemeter.com/js/counter.js?site=s44mymindleaks"></script>
+<script type="text/javascript">
+var Swiftype = window.Swiftype || {};
+// Swiftype.searchSearchFields = {'page': ['title', 'sections', 'body']};
+// Swiftype.searchFetchFields = {  "page": ["title"] };
+  (function() {
+    Swiftype.key = 'wYEXkbXYzykt7HezLKNc';
+    Swiftype.renderStyle = 'inline';
 
-		<noscript>
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//swiftype.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
 
-			<a href="http://s44.sitemeter.com/stats.asp?site=s44mymindleaks" target="_top">
 
-			<img src="http://s44.sitemeter.com/meter.asp?site=s44mymindleaks" alt="Site Meter" border="0"/></a>
+Swiftype.searchPerPage = 5;
 
-		</noscript>
+</script>
 
-		<!-- Copyright (c)2006 Site Meter -->
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+<script type="text/javascript">
+    var disqus_shortname = 'mymindleaks';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
 
 
 </html>
