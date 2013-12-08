@@ -29,6 +29,8 @@
 
    {% if page.meta-description %}
 	   <meta name="description" content="{{ page.meta-description}}" />
+   {% else if page.excerpt %}
+     <meta name="description" content="{{ page.excerpt}}" />
    {% else if page.title %}
 	   <meta name="description" content="{{ page.title }}" />
    {% else %}
@@ -42,11 +44,7 @@
    {% endif %}
 
    {% comment %} an hack to display proper tag name {% endcomment %}
-   {% if page.categories %}
-       <title>{{ page.title }}</title>
-   {% else %}
-       <title>Experiences of sofware development - Mahesh Subramaniya</title>
-   {% endif %}
+   <title>{{ page.title }}</title>
 
    <link href="{{site.url}}/atom.xml" rel="alternate"
 	 	title="{{site.site_name}}" type="application/atom+xml" />
