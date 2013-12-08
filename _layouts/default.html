@@ -54,11 +54,13 @@
 
 						<a href="{{sie.url}}/feeds.html" class="round-rss-icon" title="Feed"></a> 	
 					</div>
+						{% if page.url != '/404.html' %}
 						<div class="" id="searchbox" style="">
 							<form>
 								<input type="text" id="st-search-input" class="st-search-input" style="/* margin-top: 0.6em; */ /* margin-left: -5em; */ height: 30px; /* outline: none; */ /* width: 102px; */" autocomplete="off" autocorrect="off" autocapitalize="off">
 							</form>				
 						</div>
+						{% endif %}
 
 					</div>
 
@@ -70,14 +72,15 @@
 
 	</section>
 
+	{% if page.url != '/404.html' %}
 	<section id="searchresults">
 		<div class="row">
 			<div class="large-offset-1 columns">
 				<div id="st-results-container"></div>		
 			</div>
 		</div>
-
 	</section>
+	{% endif %}
 
 	<section id="content">
 
