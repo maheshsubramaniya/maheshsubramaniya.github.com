@@ -10,6 +10,7 @@ layout: none
 		<atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts %}
 			{% if post.categories contains 'no-home' %}
+			{% else %}
 				<item>
 					<title>{{ post.title   | xml_escape }}</title>
 					<description>{{ post.content | xml_escape }}</description>
