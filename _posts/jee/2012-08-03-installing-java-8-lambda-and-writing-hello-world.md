@@ -3,6 +3,7 @@ layout: post
 title: Java 8 for Mac OS and writing a Hello World using Lambda
 tags: [java,java-8,lambda,functional programming,closure]
 meta-description: Learn how to install Java 8 Lambda extension and run a sample program in 3 different ways
+excerpt: Learn how to install Java 8 Lambda extension and run a sample program in 3 different ways
 categories: ['jee']
 ---
 

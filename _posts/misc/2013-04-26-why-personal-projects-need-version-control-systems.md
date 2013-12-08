@@ -3,6 +3,7 @@ layout: post
 title: Why personal projects may need version control system?
 categories: ['misc']
 tags: vcs,git,version control
+excerpt: a thought on using version control for your personal projects
 ---
 
 To be real, you do not. Unless some crazy thoughts running in your mind about your personal projects. You are going to read such a feeling happened to me recently.

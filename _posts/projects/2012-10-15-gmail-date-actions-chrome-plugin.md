@@ -3,6 +3,7 @@ layout: post
 title: Gmail Date actions chrome plugin
 categories: ['projects']
 tags: [plugin,chrome,gmail,date,actions]
+excerpt: chome plugin to get today, yesterday, a week and last week email in one click
 ---
 
 This is one of my personal plugin that I've used for months and I thought it would be useful to share for people who are in similar need. If you have used Outlook or any mail client, you would have used the feature "Group by date". I've used this feature a lot and I still use this in Outlook. This plugin is trying to do similar thing in Gmail, but does by search instead of grouping. Click on any label to filter mails that are received today or last week and so on. It helped me clean up most of the unwanted mails on daily or weekly basis. 

@@ -2,6 +2,7 @@
 layout: post
 title: Macbook Air - Back in 2008 I hated it and now I'm loving it
 categories: ['misc']
+excerpt: a retrospective of 2008 macbook air to 2013 macbook air
 ---
 
 <figure>
