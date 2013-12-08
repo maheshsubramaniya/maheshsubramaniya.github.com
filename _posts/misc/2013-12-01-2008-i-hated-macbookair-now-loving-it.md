@@ -4,6 +4,10 @@ title: Macbook Air - Back in 2008 I hated it and now I'm loving it
 categories: ['misc']
 ---
 
+<figure>
+	<img src="/images/2013/macbook-air-2013-1.jpg" alt="Macbook Air 13 2013"> 
+</figure>
+
 [Back in 2008](/article/why-you-wont-love-macbook-air.html) I hated it so much and so sarcastic on it. The basic version had only 80 GB harddisk and it was a complete strip down version of then famous laptop, when the world was ruled by HP, Dell and Lenovo laptops.
 
 Now fast forward to 2013 and well I'm owning a Macbook Air. Which is way superior than any Notebook today in market. I bought the new Macbook Air from Adorama on <time>Sep 2013</time> and now it is <time>Dec 2013</time> for the past 4 months, I have pushed my notebook to some exteme level  ([ofcourse not like this](http://cnettv.cnet.com/new-macbook-air-torture-test-always/9742-1_53-50128386.html)) of processing and it has survived well and I'm impressed.
