@@ -2,14 +2,14 @@
 layout: static
 ---
 
-I'm Mahesh Subramaniya, programmer by profession and passion. My today's career has been started as a hobby, when I was introduced to computers at my 7th Class in school. Started to get my hands dirty with [LOGO](http://en.wikipedia.org/wiki/Logo_(programming_language), [BASIC](http://en.wikipedia.org/wiki/BASIC "BASIC") and [MS-DOS](http://en.wikipedia.org/wiki/MS-DOS) and till date keep programming with Java, Python, Javascripts etc.,. 
+<h2> Welcome</h2>. I'm Mahesh. My today's career has been started as a hobby, when I was introduced to computers during my 7th grade in school. Started to get my hands dirty with [LOGO](http://en.wikipedia.org/wiki/Logo_(programming_language), [BASIC](http://en.wikipedia.org/wiki/BASIC "BASIC") and [MS-DOS](http://en.wikipedia.org/wiki/MS-DOS) and till now programming with Java, Python, Javascripts etc.,.
 
-My interests started with compilers and web and now solving some complex problems in Enterprises.
+My interests started with compilers, web and now solving some complex problems in Enterprises.
 
 Well, to talk about this blog is a place where I register my thoughts and views on Software, Programming and Enterprise software applications. Hope you will find a quite few interesting articles and views of Software, programming & Enterprise Architecture. This blog was basically started during my college days, with a different name. But I decided to go with my name so that it seems bit logical to me. I've migrated this blog on a whole range of blog platforms starting with [Blogger](http://en.wikipedia.org/wiki/Blogger_(service)), [Wordpress hosted blog](http://maheshexp.wordpress.com/) now it runs on [Jekyll powered by github](/article/trying-git-hosted-blog-jekyll.html).
 
 Follow me at <a href="http://twitter.com/mymindleaks" rel="me" itemprop="url">Twitter</a>, 
-<a href="https://plus.google.com/+MaheshSubramaniya" rel="me">+MaheshSubramaniya</a>
+<a href="https://plus.google.com/+MaheshSubramaniya?rel=author" rel="author">+MaheshSubramaniya</a>
 
 ### Web Applictions ###
 
