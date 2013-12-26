@@ -48,7 +48,7 @@ good_menu_in(X):- restaurant(X,R), good(R,M)
 
 {% endhighlight %}
 
-when `restaurant1()` rule is executed, it would fetch `restaurant4` and `restaurant1`. When it tries to match `good(restaurant1)`, it wont find any, hence it will backtrack to `good(restaurant1)`.
+when `restaurant1()` rule is executed, it would fetch `restaurant4` and `restaurant1`. When it tries to match `good(restaurant4)`, it wont find any, hence it will backtrack to `good(restaurant1)`.
 
 Result:
 `ginger_chicken`, `fried_noodles`
