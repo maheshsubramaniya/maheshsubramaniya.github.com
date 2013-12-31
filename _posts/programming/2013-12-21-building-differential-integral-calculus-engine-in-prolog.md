@@ -16,7 +16,7 @@ Math is all about symbolic calculation and there are only [handful of programmin
 
 This article shows you how to use Prolog to write Differential and Integral calculus rules. I've coded few modules for some of my bachelors projects such as [MinT](https://github.com/mymindleaks/Mint) and [jLogics](https://github.com/mymindleaks/jLogics).
 
-If you are new to prolog, I would recommend to get some [basics of Prolog]() before diving in here. Do not worry you are not learning anything [weird like this](http://net.tutsplus.com/articles/roundups-articles/top-10-most-bizarre-programming-languages/). 
+If you are new to prolog, I would recommend to get some [basics of Prolog](https://en.wikibooks.org/wiki/Prolog) before diving in here. Do not worry you are not learning anything [weird like this](http://net.tutsplus.com/articles/roundups-articles/top-10-most-bizarre-programming-languages/). 
 
 In nutshell, just understand that
 
