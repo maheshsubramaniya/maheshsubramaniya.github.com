@@ -8,7 +8,7 @@ pygments: true
 permalink:   /article/:title.html
 url: http://www.maheshsubramaniya.com
 site_name: Mahesh Subramaniya
-sub_title: engineer, developer, photographer, coffee lover
+sub_title: hacker, engineer, developer, photographer, coffee lover
 author: Mahesh Subramaniya
 google_robots: noodp, noydir
 tags: J2EE, J2EE Frameworks, Enterprise Architecture, Distributed, Cloud Computing, Performance
