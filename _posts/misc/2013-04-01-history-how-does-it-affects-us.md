@@ -3,6 +3,7 @@ layout: post
 title: History  - How does it affects us?
 author: Mahesh Subramaniya
 meta-description: History - How does it affects us?
+excerpt: History - How does it affects us?
 tags: computer,history
 categories: ['misc']
 ---

@@ -3,6 +3,7 @@ layout: post
 title: How to setup Markdown Mode for Emacs.
 author: Mahesh Subramaniya
 meta-description: Learn how to install the markdown mode for the Emacs editor
+excerpt: Learn how to install the markdown mode for the Emacs editor
 tags: markdown,emacs
 categories: ['programming']
 ---
