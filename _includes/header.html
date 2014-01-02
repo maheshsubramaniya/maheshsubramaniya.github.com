@@ -17,31 +17,53 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="date" content="{{ page.date | date: '%Y' }}-{{ page.date | date: '%m' }}-{{ page.date | date: '%d' }}" />
 	<meta name="robots" content="{{ site.google_robots}}" />
-
-	<meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@{{site.twitter_id}}">
-    <meta name="twitter:creator" content="@{{site.twitter_id}}">
-    <meta name="twitter:url" content="{{site.url}}">
-    <meta name="twitter:title" content="{{site.site_name}} - {{site.sub_title}}">
-    <meta name="twitter:description" content="MaheshSubramaniya.com is a blog on {{site.sub_title}}">
-
-    <link rel="canonical" href="{{site.url}}"/>
-
-   {% if page.meta-description %}
-	   <meta name="description" content="{{ page.meta-description}}" />
-   {% else if page.excerpt %}
-     <meta name="description" content="{{ page.excerpt}}" />
-   {% else if page.title %}
-	   <meta name="description" content="{{ page.title }}" />
-   {% else %}
-   		<meta name="description" content="Learn about the complex concepts and methodology of computer science and enterprise application development" />
-   {% endif %}
-
+  <meta name="description" content="{{ page.excerpt}}" />
    {% if page.tags %}
-   <meta name="keywords" content="{{page.tags | join:","}}" />
+  <meta name="keywords" content="{{page.tags | join:","}}" />
    {% else %}
    <meta name="keywords" content="J2EE, J2EE Frameworks, Enterprise Architecture, Distributed, Cloud Computing, Performance" />
    {% endif %}
+
+   <!-- linking posts -->
+   {% if page.previous.url  %}
+      <meta name="prev" content="{{site.url}}{{page.previous.url}}"/>
+   {% endif %}
+
+   {% if page.next.url  %}
+      <meta name="next" content="{{site.url}}{{page.next.url}}"/>
+   {% endif %}
+
+   {% if page.path == 'index.html'  %}
+    <meta name="next" content="{{site.url}}{{site.posts.first.url}}"/>
+    {% endif %}
+   
+
+
+  <!-- twitter meta --> 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{site.twitter_id}}">
+  <meta name="twitter:creator" content="@{{site.twitter_id}}">
+  <meta name="twitter:description" content="{{page.excerpt}}">
+  <meta name="twitter:title" content="{{ page.title }}">
+
+  <!-- open graph meta -->
+  <meta property="og:type" content="article">  
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{page.excerpt}}">
+  <meta property="og:site_name" content="MaheshSubramaniya.com">
+  <meta property="og:image" content="https://pbs.twimg.com/profile_images/287366742/pro-head_bigger.jpeg"/>
+
+  {% if page.path contains '_posts' %}
+  <meta name="twitter:url" content="{{site.url}}{{page.url}}">
+  <meta property="og:url" content="{{site.url}}{{page.url}}">
+  {% else %}
+  <meta name="twitter:url" content="{{site.url}}">
+  <meta property="og:url" content="{{site.url}}">
+  {% endif %}
+
+
+  <link rel="canonical" href="{{site.url}}"/>
+
 
    {% comment %} an hack to display proper tag name {% endcomment %}
    <title>{{ page.title }}</title>

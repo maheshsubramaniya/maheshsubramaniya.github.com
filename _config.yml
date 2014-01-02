@@ -2,13 +2,13 @@ destination: ./_site
 auto: true
 lsi: false
 server_port: 4000
-pygments:    true
 markdown: rdiscount
 pygments: true
 permalink:   /article/:title.html
 url: http://www.maheshsubramaniya.com
 site_name: Mahesh Subramaniya
 sub_title: engineer, developer, photographer, coffee lover
+site_description: Experiences of sofware development
 author: Mahesh Subramaniya
 google_robots: noodp, noydir
 tags: J2EE, J2EE Frameworks, Enterprise Architecture, Distributed, Cloud Computing, Performance
