@@ -21,4 +21,4 @@ and know more about me at <a href="http://www.linkedin.com/in/maheshsubramaniya"
 
 ### Projects ###
 
-Look at the <a href="/">homepage</a> for all my projects. Not all my projects are listed in here. Just whatever I thought important to share is made public.
+Look at the <a href="/">homepage</a> for list of projects. Not all my projects are listed in here. Just whatever I thought important to share is made public.
