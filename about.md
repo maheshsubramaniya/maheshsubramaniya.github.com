@@ -10,7 +10,7 @@ Well, to talk about this blog is a place where I register my thoughts and views 
 
 Follow me at <a href="http://twitter.com/mymindleaks" rel="me" itemprop="url">@{{site.twitter_id}}</a>, 
 <a href="https://plus.google.com/+MaheshSubramaniya?rel=author" rel="author">+MaheshSubramaniya</a>,
-and know more about me at <a href="http://www.linkedin.com/in/smaheshwaran" rel="me">LinkedIn</a>
+and know more about me at <a href="http://www.linkedin.com/in/maheshsubramaniya" rel="me">LinkedIn</a>
 
 ### Web Apps ###
 
