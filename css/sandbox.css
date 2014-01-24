@@ -73,8 +73,14 @@ pre code
 
 #content
 {
-	width: 80%;
-	margin-left: 10%;
+	width: 65%;
+	margin-left: 25%;
+	text-align: justify;
+}
+
+.post-header
+{
+	text-align: left;
 }
 
 
@@ -114,6 +120,10 @@ pre code
 /* screen width >= 1024px - desktop sizes */
 @media screen and (min-width: 1023px) {
 
+	#titlebar
+	{
+		margin-left: 10%;
+	}
 	.site-title h1
 	{
 		margin-left: 1em;
@@ -129,6 +139,13 @@ pre code
 
 /* screen width < 1024px - desktop sizes */
 @media screen and (max-width: 1024px) {
+	#content
+	{
+		width: 70%;
+		margin-left: 20%;
+		text-align: justify;
+	}
+
 	.twitter-profile-icon
 	{
 		margin-left: auto;
