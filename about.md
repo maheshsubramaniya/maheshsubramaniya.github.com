@@ -8,7 +8,7 @@ My interests started with compilers, web and now solving some complex problems i
 
 Well, to talk about this blog is a place where I register my thoughts and views on Software, Programming and Enterprise software applications. Hope you will find a quite few interesting articles and views of Software, programming & Enterprise Architecture. This blog was basically started during my college days, with a different name. But I decided to go with my name so that it seems bit logical to me. I've migrated this blog on a whole range of blog platforms starting with [Blogger](http://en.wikipedia.org/wiki/Blogger_(service)), [Wordpress hosted blog](http://maheshexp.wordpress.com/) now it runs on [Jekyll powered by github](/article/trying-git-hosted-blog-jekyll.html).
 
-Follow me at <a href="http://twitter.com/mymindleaks" rel="me" itemprop="url">@{{site.twitter_id}}</a>, 
+Follow me at <a href="http://twitter.com/{{site.twitter_id}}" rel="me" itemprop="url">@{{site.twitter_id}}</a>, 
 <a href="https://plus.google.com/+MaheshSubramaniya?rel=author" rel="author">+MaheshSubramaniya</a>,
 and know more about me at <a href="http://www.linkedin.com/in/maheshsubramaniya" rel="me">LinkedIn</a>
 

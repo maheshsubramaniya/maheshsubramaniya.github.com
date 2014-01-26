@@ -13,7 +13,7 @@ author: Mahesh Subramaniya
 google_robots: noodp, noydir
 tags: J2EE, J2EE Frameworks, Enterprise Architecture, Distributed, Cloud Computing, Performance
 paginate: 10
-twitter_id: mymindleaks
+twitter_id: msubramaniya
 excerpt_separator: ""
 url_photo: http://500px.com/maheshsubramaniya
 url_food: food.html
@@ -22,5 +22,5 @@ url_tamil: tamil.html
 maruku:
   use_tex:    false
   use_divs:   false
-  png_dir:    images/latex
-  png_url:    /images/latex
+  png_dir:    /images/
+  png_url:    /images/
