@@ -91,7 +91,7 @@ The meaning for the symbols are.
 
 <table rules="groups" frame="hsides" cellspacing="0" cellpadding="6" border="2">
 <caption></caption>
-<colgroup><col align="left"><col align="left">
+<colgroup><col align="left"></col>
 </colgroup>
 <thead>
 <tr><th scope="col">Symbols</th><th scope="col">Meaning</th></tr>
@@ -148,7 +148,7 @@ The meaning for the symbols are.
 </p>
 <table rules="groups" frame="hsides" cellspacing="0" cellpadding="6" border="2">
 <caption></caption>
-<colgroup><col align="left"><col align="left">
+<colgroup><col align="left"></col>
 </colgroup>
 <thead>
 <tr><th scope="col">Symbol</th><th scope="col">Meaning</th></tr>
