@@ -1,8 +1,8 @@
 destination: ./_site
 auto: true
 lsi: false
-server_port: 4000
-markdown: rdiscount
+port: 4000
+markdown: kramdown
 pygments: true
 permalink:   /article/:title.html
 url: http://www.maheshsubramaniya.com
@@ -14,13 +14,9 @@ google_robots: noodp, noydir
 tags: J2EE, J2EE Frameworks, Enterprise Architecture, Distributed, Cloud Computing, Performance
 paginate: 10
 twitter_id: msubramaniya
+linkedin_id: maheshsubramaniya
+linkedin_url: http://www.linkedin.com/in/maheshsubramaniya
 excerpt_separator: ""
 url_photo: http://500px.com/maheshsubramaniya
 url_food: food.html
 url_tamil: tamil.html
-
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_dir:    /images/
-  png_url:    /images/
