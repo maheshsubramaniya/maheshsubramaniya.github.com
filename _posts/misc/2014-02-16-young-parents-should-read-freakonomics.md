@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Young parents should read Freakonomics, than watching it.
+title: New parents should read Freakonomics, than watching it.
 categories: ['books']
 excerpt: a gist of what Steven Levitt's book Freakonomics taught me
 ---
@@ -10,7 +10,9 @@ excerpt: a gist of what Steven Levitt's book Freakonomics taught me
     <figcaption>Source: <a href="http://www.ethos3.com">www.ethos3.com</a></figcaption>
 </figure>
 
-_Note: This is not a [book review](http://www.amazon.com/Freakonomics-Economist-Explores-Hidden-Everything/dp/0060731338#customerReviews), but sharing what I think is interesting for young parents like me._
+**Note**: _This is not a [book review](http://www.amazon.com/Freakonomics-Economist-Explores-Hidden-Everything/dp/0060731338#customerReviews), but sharing what I think is interesting for young parents like me._
+
+**Update [02-18-2014]**: I've modified the title from "_Young parents should read Freakonomics, than watching it_", as I see that "_New Parents_" fits better than "_Young Parents_".
 
 I was introduced to [Freakonomics](http://amzn.to/1cOAdyL) through the movie in Netflix in 2011 and I watched it again in 2014 in [Amazon Prime](http://amzn.to/1bDyl1b). What difference did it make? Well, it made a huge difference. I'm now lending my ears to any information regarding Parenting, Child Behavior and their education. And Freakonomics has exactly these things which did matter to me in 2014 than in 2010. Contrary to my initial perception, the movie didn't talk about economy, fiscal or monetary stuffs. I believed book would be the same too.
 
