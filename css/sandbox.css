@@ -11,12 +11,26 @@ pre
 	padding: 10px;
 	color:black;
 	font-weight: normal;
+	/*background-color: #ECECEC;*/
+	/*border: 1px solid #CCCCCC;*/
 }
 
 pre code
 {
 	color:black;
 	font-weight: normal;
+}
+
+
+.homepage.post h3, .homepage.post h4, .homepage.post h5
+{
+	font-weight: normal;
+}
+
+
+.post h3, .post h4, .post h5
+{
+	font-weight: bold;
 }
 
 #titlebar
