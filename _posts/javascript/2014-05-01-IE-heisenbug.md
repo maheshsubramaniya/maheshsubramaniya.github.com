@@ -1,3 +1,12 @@
+---
+layout: post
+title: IE Heisenbug
+excerpt: IE historically has an useless debugger and how this elusive heisenbug acts with it
+categories: ['javascript']
+tags: javascript','internet explorer','heisenbug'
+---
+
+
 Circa 2009, when I was testing the mobile webapp in cross platform, Internet Explorer is especially a [pain in the neck](http://www.maheshsubramaniya.com/article/ie-6-and-ie-7-radio-buttons-doesnt-select.html). One such pain is a [Heisenbug](http://www.catb.org/jargon/html/H/heisenbug.html) that I came across.
 
 <pre>
