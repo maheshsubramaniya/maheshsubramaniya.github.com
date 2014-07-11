@@ -1,9 +1,8 @@
 destination: ./_site
-auto: true
 lsi: false
 port: 4000
 markdown: kramdown
-pygments: true
+highlighter: pygments
 permalink:   /article/:title.html
 url: http://www.maheshsubramaniya.com
 site_name: Mahesh Subramaniya
