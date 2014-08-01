@@ -2,6 +2,7 @@
 layout: post
 title: Experts guide to google search engine
 categories: ['misc']
+excerpt: Experts guide to google search engine
 ---
 Today i had found this link, which exposes the various services provided by google search engine...note it, through search engines. it gives a list of commands to be used for quicker search.
 
