@@ -3,4 +3,3 @@
 User-Agent: *
 Disallow: /css/
 Disallow: /search-result.html
-Disallow: /sitemap.xml
