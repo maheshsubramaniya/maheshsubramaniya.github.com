@@ -2,6 +2,7 @@
 layout: post
 title: Numbers in Tamil language – Why zero might not be important
 categories: ['misc']
+tags: [tamil,language,number,how-to]
 ---
 <p style="">Every civilization had their own representation of numbers in their age. Like what we have now , the <a title="Arabic Numerals" href="http://en.wikipedia.org/wiki/Arabic_numerals" target="_blank">Arabic Numerals</a> [1. The Story of Mathematics - Richard Mankiewicz ] [2. Number System - http://www.math.wichita.edu/history/topics/num-sys.html]. This representation is no more in use as universally as the arabic numerals that are taught now. Though different civilizations had different glyphs to represent number, everyone have understood the importance of numbers and found a way to represent them and did known how to handle it.</p>
 

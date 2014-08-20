@@ -1,16 +1,7 @@
 ---
 layout: post
 title: Stop all annoying messages from Twitter & Pownce, get FriendFeed
-tags:
-- FriendFeed
-- guide
-- howto
-- Misc...
-- Productivity
-status: publish
-type: post
-published: true
-meta: {}
+tags: [FriendFeed ,guide ,howto ,Misc... ,Productivity ]
 ---
  <a href="http://friendfeed.com" title="FriendFeed - Merge all your friends at FriendFeed | My Mind Leaks"><img src="http://friendfeed.com/static/images/logo-b.png?v=141bf9223b0f653d28248d187df2725c" alt="FriendFeed - Merge all your friends at FriendFeed | My Mind Leaks" /></a>
 

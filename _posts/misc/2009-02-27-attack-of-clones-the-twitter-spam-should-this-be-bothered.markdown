@@ -2,6 +2,7 @@
 layout: post
 title: Attack of clones – The Twitter spam. Should this be bothered?
 categories: ['misc']
+tags: [twitter,clone,robots,spam]
 ---
 Today I found this email in my inbox.
 <p style="text-align: center;"><a href="../images/2009/02/image002.png"><img class="aligncenter size-medium wp-image-717" title="image002" src="../images/2009/02/image002-300x185.png" alt="" width="300" height="185" /></a></p>

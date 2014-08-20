@@ -2,6 +2,7 @@
 layout: post
 title: Firefox bug reports – Some interesting facts
 categories: ['misc']
+tags: [firefox,bug,reports]
 ---
 Today I was curious to know about the list of bugs that has occurred for the Firefox browser over all these time. And the count of bugs received and fixed made me surprise about the development at Mozilla. Bugs are important players in any development projects. Hence bugs determines the robustness of the software. But still if a strong developer team available, then more robust the software as all the bugs will be fixed and hence more robust is the software.
 

@@ -2,6 +2,7 @@
 layout: post
 title: Does pretty links & SEO URL really sensible for search engines?
 categories: ['misc']
+tags: [seo,search engine,google,bing,yahoo]
 ---
 After done with the moving to a hosting provider, next I was trying to overhaul my blog with the link structure. Puzzled on where to start from. People enter into my blog via URL. Hence decided to tweak the URL.  So, it's time to decide upon what link structure I should chose. And before that, is this link structure is really a necessary stuff to tweak up? If you ask with a SEO expert, he/she would pour a rain of tips, problems if you don't make the links looks SEO optimized. And mostly Google oriented optimizations. But sometimes, I used to think, Is Google going to rely-upon this tiny URL part in the entire web indexing operation. If you look into any of the blog which has a content juice, you wont find a proper URL structure. I will give you a lots of example.
 <h3>Before that what is an URL, and why everyone in this world is so much bothered about it?</h3>
