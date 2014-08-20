@@ -2,8 +2,7 @@
 layout: post
 title: Blur Event fired Twice - Javascript 
 categories: ['javascript']
-tags: javascript','blur','event'
-
+tags: [javascript,blur,event]
 ---
 
 If you are testing your javascript based web app in older browsers of **Chrome** ( may be in  **Safari**, **IE**) you will face this issue. When you use [blur event](http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#event-type-blur) in the DOM, general assumption is that event will be fire exactly once when the input field is foccused out either by 'tab' or 'mouse click'. But in a very special scenario, i.e when the <kbd>Alt</kbd>+<kbd>Tab</kbd> is pressed, the same blur event will be fired twice.

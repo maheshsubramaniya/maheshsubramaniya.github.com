@@ -2,6 +2,7 @@
 layout: post
 title: ASP, PHP or CGI + Javascript Steals your Clipboard
 categories: ['misc']
+tags: [microsoft,windows,clipboard,hacks]
 ---
 
 <b>Warning!!!</b>. If want to access any kind of ASP , PHP or CGI page, do clear out the system clipboard. What sound nuts? Yeah, the thing what i said really stunned me, with the combination of ASP , PHP or CGI and Javascript, one can read the contents of the victims clipboard.

@@ -2,6 +2,7 @@
 layout: post
 title: Google releases Google Movies
 categories: ['misc']
+tags: [google,movies]
 ---
 <p>It's a good news for the movies and the Multiplex lovers in India. Google had started indexing the details of the movies, it's show time, the theatre / multiplex where the movie is picture. You can grab all those details via <a href="http://google.co.in/movies">Google Movies</a>.</p> <p>&nbsp;</p> <p align="center"><img border="0" alt="image" src="../images/2008/04/image29.png" width="275" height="241"/> </p>
 <!--more-->

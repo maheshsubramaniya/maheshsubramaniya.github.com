@@ -1,7 +1,8 @@
 ---
 layout: post
-title: ! 'Google Book Tip: Manage Your Library via Barcode'
+title: 'Google Book Tip - Manage Your Library via Barcode'
 categories: ['misc']
+tags: [google,books,search]
 ---
 I Came across an interesting tip for Google Book. If you are having a lots of book and you arent not able to type in all your ISBN number  and need to <a href="http://www.maheshsubramaniya.com/google/google-book-tip-search-your-home-library/">keep track of them using Google's book</a> service. Here is a quick tip.
 

@@ -3,6 +3,7 @@ layout: post
 title: Understanding how jars are loaded into JVM from a directory in Linux
 excerpt: In contrary to common understanding of file ordering,understand how files are ordered in a directory.
 categories: ['java']
+tags: [java,jee,j2ee,linux,filesystem]
 ---
 
 **Question**: If the `lib/` folder has `jar1.jar` and `jar2.jar`, what is the order of the jar loading into the JVM if you use Linux(EXT3 file system)?

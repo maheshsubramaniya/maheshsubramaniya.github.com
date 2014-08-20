@@ -1,20 +1,8 @@
 ---
 layout: post
 title: Google Calendar – A Get Things Done , TODO and Micro Journal
-tags:
-- Calendar
-- Featured
-- Google
-- Google Calendar
-- Micro Journal
-- TODO
-status: publish
-type: post
-published: true
-meta:
-  _utw_tags_0: no tags
-  _edit_last: '1'
-  _edit_lock: '1292782277'
+categories: ['misc']
+tags: [Calendar ,Featured ,Google ,Google Calendar ,Micro Journal ,TODO] 
 ---
 I would praise Google Calendar as one of the best Calendar, TODO, GTD( Get Things Done ) , Micro Journal kind of application that I'm using for a quite long time.
 

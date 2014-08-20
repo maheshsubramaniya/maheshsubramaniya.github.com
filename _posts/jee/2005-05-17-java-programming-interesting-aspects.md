@@ -2,30 +2,34 @@
 layout: post
 title: Java Programming - Interesting aspects
 categories: ['jee']
+tags: [ 'java' , 'jee', 'programming',best practices]
 ---
 Java - the name and the fame , arises from the one of the top software company, Sun Microsystems. Java programming language is muscling its way onto the Internet with powers beyond those of mortal computer languages. The technology represented by Java holds the promise of a totally new way of providing products and services to consumers and promises truth, justice and an effective way of programming the information superhighway.
+
 <div id="table-of-contents">
+
 <h2>Table of Contents</h2>
+
 <div id="text-table-of-contents">
-<ul>
-	<li><a href="#sec-1">1 Why a new language arised? </a></li>
-	<li><a href="#sec-2">2 What makes java popular? </a>
-<ul>
-	<li><a href="#sec-2.1">2.1 Purely Object Oriented </a></li>
-	<li><a href="#sec-2.2">2.2 Platform Independent: </a></li>
-	<li><a href="#sec-2.3">2.3 Multi-Threading </a></li>
-	<li><a href="#sec-2.4">2.4 Memory Management </a></li>
-	<li><a href="#sec-2.5">2.5 Internet and Networking Applications </a></li>
-	<li><a href="#sec-2.6">2.6 Security </a></li>
-	<li><a href="#sec-2.7">2.7 Be Friendly </a></li>
-</ul>
-</li>
-</ul>
+	<ul>
+		<li><a href="#sec-1">1 Why a new language arised? </a></li>
+		<li><a href="#sec-2">2 What makes java popular? </a>
+	</ul>
+	<ul>
+		<li><a href="#sec-2.1">2.1 Purely Object Oriented </a></li>
+		<li><a href="#sec-2.2">2.2 Platform Independent</a></li>
+		<li><a href="#sec-2.3">2.3 Multi-Threading </a></li>
+		<li><a href="#sec-2.4">2.4 Memory Management </a></li>
+		<li><a href="#sec-2.5">2.5 Internet and Networking Applications </a></li>
+		<li><a href="#sec-2.6">2.6 Security </a></li>
+		<li><a href="#sec-2.7">2.7 Be Friendly </a></li>
+	</ul>
 </div>
-</div>
+
 <div id="outline-container-1" class="outline-3">
 <h3 id="sec-1"><span class="section-number-3">1</span> Why a new language arised?</h3>
-<div id="text-1" class="outline-text-3">
+
+<div>
 
 Before the java, programming languages such as C, C++, Pascal ruled the world of programming. But there exist lot of disadvantages with them. They are,
 Platform Dependent       A C or C++ program written in Win 95/ 98 will not run in Linux or unix systems.
@@ -37,9 +41,12 @@ Internet         These languages although used in webs for server-side cgi scrip
 
 </div>
 </div>
+
 <div id="outline-container-2" class="outline-3">
+
 <h3 id="sec-2"><span class="section-number-3">2</span> What makes java popular?</h3>
-<div id="text-2" class="outline-text-3">
+
+<div id="text-2" class="">
 
 Popularity of java is based on many aspects.
 <ul>

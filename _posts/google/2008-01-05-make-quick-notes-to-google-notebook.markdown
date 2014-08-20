@@ -2,6 +2,7 @@
 layout: post
 title: Make quick notes in Google Notebook
 categories: ['misc']
+tags: ['google','notebook']
 ---
 
 <a href="http://www.google.com/notebook" title="Google Notebook">Google Notebook</a>, a novel idea from google, at first didn't impress me. Whenever I come across any content that should be made note of, I used to copy and store it in my gmail. But things became difficult when my corporate blocked the mail programs. Then the only way was to forward the mail to my corporate id for any references that I've made.

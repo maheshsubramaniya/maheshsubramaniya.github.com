@@ -1,19 +1,7 @@
 ---
 layout: post
 title: Display tags in Google Search using Google Bookmarks
-tags:
-- Google
-- google bookmarks
-- google search
-- Google search results tag
-- Search Engine Optimization
-- seo
-status: draft
-type: post
-published: false
-meta:
-  _edit_lock: '1292779155'
-  _edit_last: '1'
+tags: [Google ,google bookmarks ,google search ,Google search results tag ,Search Engine Optimization ,seo] 
 ---
 <a href="http://www.maheshsubramaniya.com/wp-content/uploads/2008/03/google-shows-posts-tags-2.GIF" title="Google shows posts tags 2"></a><a href="http://www.maheshsubramaniya.com/googles-trick-to-search-torrents/">Google Search</a> is getting better and better as time flies. Google Search starts displays the tags that you have given for the post. Wow!!! This is cool!!!
 

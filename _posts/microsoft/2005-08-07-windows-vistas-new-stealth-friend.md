@@ -2,6 +2,7 @@
 layout: post
 title: Windows Vista's new ( Stealth ) Friend
 categories: ['misc']
+tags: [microsoft,windows,news]
 ---
 Few days back, most have heared that "Windows Vista" ( Longhorn ) had it's kinda attackers. Don't get guessed with old-bored legal attacks of Microsoft. They are viruses for Windows Vista. Viruses are now ready to welcome the new friend / host. With the latest version of Windows, virus writers have started their work. A virus family have been published. The attack is possibly done through the Windows Vista's command shell Monad. Monad is  simply like BASH shell of Linux, now which provides lot more commands to write advanced shell scripts like that can be wrote in Linux. The fame of releasing the virus goes to the Australian virus writer.
 

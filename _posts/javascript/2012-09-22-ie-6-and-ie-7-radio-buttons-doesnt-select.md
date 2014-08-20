@@ -3,7 +3,7 @@ layout: post
 title: IE 6 and IE 7 - Radio buttons doesn't select
 excerpt: IE 6 and 7 goes crazy when you dynamically create radio elements in DOM and how to fix it.
 categories: ['javascript']
-tags: javascript','blur','event'
+tags: [javascript,blur,event]
 ---
 
 

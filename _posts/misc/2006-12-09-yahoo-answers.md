@@ -2,6 +2,7 @@
 layout: post
 title: Yahoo Answers!!! – Yet another Sucess story from Yahoo
 categories: ['misc']
+tags: [yahoo,answers,news]
 ---
 Yahoo made the biggie and it's rival Google to close down one of it's services, Google Answers and fall to it's feet. Yahoo introduced <a target="_blank" href="http://answers.yahoo.com" title="Yahoo! Answers">Yahoo! Answers</a> and made it rocked by making it free, where google charged few pennies to answer the questions.
 

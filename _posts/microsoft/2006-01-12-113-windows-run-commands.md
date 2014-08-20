@@ -2,6 +2,7 @@
 layout: post
 title: 113 Windows Run Commands
 categories: ['misc']
+tags: [microsoft,windows,how-to]
 ---
 
 _Note: There was some douchebag who sent me an email claiming that he published the list earlier than me and asked me to take that page off. But he didnt know this one was published in my personal wordpress blog ([maheshexp.wordpress.com](http://maheshexp.wordpress.com/2006/01/12/113-useful-run-commads/)) on *Jan 2006* and then later migrated to different blogs of mine. If anyone still has question, here is the [google caching the older version of my page](https://www.google.com/search?q=113+Useful+RUN+Commads+%7C+Moved+to+mymindleaks.com&rlz=1C5CHFA_enUS552US552&oq=113+Useful+RUN+Commads+%7C+Moved+to+mymindleaks.com&aqs=chrome..69i57.514j0j7&sourceid=chrome&espv=210&es_sm=91&ie=UTF-8#es_sm=91&espv=210&q=113+Useful+RUN+Commands+maheshexp)_

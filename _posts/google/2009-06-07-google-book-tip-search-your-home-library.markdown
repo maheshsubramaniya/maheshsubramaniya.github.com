@@ -1,7 +1,8 @@
 ---
 layout: post
-title: ! 'Google Book Tip: Search your home library'
+title: 'Google Book Tip - Search your home library'
 categories: ['misc']
+tags: [google,book, google book, search, home, library]
 ---
 <p style="text-align: center;"><img class="size-full wp-image-744 alignnone" title="2877643441_c225a3880d_m" src="../images/2009/06/2877643441_c225a3880d_m.jpg" alt="2877643441_c225a3880d_m" width="176" height="240" /></p>
 <p style="text-align: center;font-size:xx-small;">Source: <a href="http://www.flickr.com/photos/sjb5/">sbj</a></p>

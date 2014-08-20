@@ -2,6 +2,7 @@
 layout: post
 title: India Rocks – Technology, Software, Java….
 categories: ['misc']
+tags: [india,technology,news]
 ---
 [digg=http://digg.com/tech_news/India_Rocks_Technology_Software_Javah]<a href="../images/2006/05/trends-1.GIF" title="trends-1.GIF" class="imagelink"></a><a href="../images/2006/05/trends-1.GIF" title="trends-1.GIF" class="imagelink"></a>I have come across <a href="http://www.google.com/trends">Google Trends</a> site now. I had a try and it gave me some intresting results. It give a picture that Indian's do most of the search on the technology and softwares. Anyway it's intresting to see such a statistics...
 

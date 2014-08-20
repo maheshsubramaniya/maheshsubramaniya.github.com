@@ -2,6 +2,7 @@
 layout: post
 title: Tip for Gmail Users - Very Useful
 categories: ['misc']
+tags: ['gmail','google','search']
 ---
 Here's a small and very useful tip for the users of gmail. Gmail provides a feature called PLUS(+). Yes the usage of plus symbol in your email id. Like attaching a tag to email. You would have experience keeping various email id's for various purposes i.e for personal use an email id, for groups purposes an email id, but all these were always irritating to manage. Now Gmail tries to remove those hurdles and makes user feel comfortable to use single email id for different purposes. How??
 

@@ -3,6 +3,7 @@ layout: post
 title: Javascript - Bad parts
 excerpt: Understand what are the bad parts of javascript and how you wanted to avoid it
 categories: ['javascript']
+tags: [javascript,bad parts,best practices]
 ---
 
 > When you know what is the right thing to, you cannot do the other way.

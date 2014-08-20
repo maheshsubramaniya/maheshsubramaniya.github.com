@@ -1,16 +1,57 @@
 ---
 layout: default
 ---
+
 <div id="wrapper">
 
 <article class="post single">
+
 	<header class="post-header">
 		  <h2 class="post-title">{{ page.title }}</h2>
 	</header>
 	<p>{{ content }}</p>
 
-  	<footer >
 
+
+	<small>	
+		<div class="tags">
+			Tagged under: 
+			{% for tag in page.tags  %}
+				<span><a href="/tag/{{tag|uri_escape}}">{{tag}}</a>,</span>
+			{% endfor %}
+		</div>
+
+	</small>
+
+	<nav class="page-navigation">
+	        <div class="clear">&nbsp;</div> 
+	        <div class="left"> 
+	        {% if page.previous.url %} 
+	                <a href="{{page.previous.url}}" title="Previous Post: 
+	{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+	        {% endif %} 
+	        </div> 
+
+	        <div class="right"> 
+	        {% if page.next.url %} 
+	                <a href="{{page.next.url}}" title="next Post: 
+	{{page.next.title}}">{{page.next.title}} &raquo; </a> 
+	        {% endif %} 
+	        </div> 
+	        <div class="clear">&nbsp;</div> 
+
+	</nav>
+
+	<div id="related_posts">
+		<h3>Related Posts</h3>
+		<ul>
+		{% for post in site.related_posts limit:5 %}
+		  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}	
+		</ul>
+	</div>
+	
+  	<footer >
 
 <a class="punch" href="https://twitter.com/intent/tweet?text=Nice Read: {{ page.title }}&url={{site.url}}{{page.url}}&via={{site.twitter_id}}">
 	<span style="
@@ -33,7 +74,6 @@ layout: default
 
 	<div id="disqus_thread"></div>
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  		
 
   	</footer>
   	<!-- by {{site.author}} -->

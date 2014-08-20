@@ -2,6 +2,7 @@
 layout: post
 title: JUnit best practices - How to write good junit test cases?
 categories: ['jee']
+tags: [java,jee,j2ee,junit,best practices]
 ---
 Writing unit test cases1 are the part of any development project process. But developers rarely follow process. For us, we wanted to code something and see it to work on what we have fixed and finally move it to production.When it works, we are happy with it. But wait, when it doesn't work? Then comes a lot of head ache for developer. Ok stories apart, lets get back to work. I'm not going to discuss about how to write unit testcases, but rather discuss how to write some better unit testcases using JUnit and avoid some of the pitfalls that we developers falls. Since JUnit is based on xUnit testing framework, any xUnit based testing framework for the language you use like NUnit, CppUnit, etc.,
 <div id="table-of-contents">

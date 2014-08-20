@@ -2,6 +2,7 @@
 layout: post
 title: Hack GMail Search – Part 2
 categories: ['misc']
+tags: ['google','gmail','search']
 ---
 
 <p align="center" style="font-size: xx-small"><img border="0" width="420" src="../images/2008/02/image6.png" alt="image" height="236" /></p>

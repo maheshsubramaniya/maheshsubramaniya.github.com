@@ -2,6 +2,7 @@
 layout: post
 title: Drag n Drop to Organize your feeds in Google Reader
 categories: ['misc']
+tags: [yahoo,answers,news]
 ---
 <a href="http://google.com/reader">Google reader</a> features a lot of features where most of them are still un explored. One good feature in Google reader is a quick way to organize the feeds in Google Reader. If you are a blogger or voracious reader, you would have sure subscribed to more than 50+ blogs. You later on as the count increases you might feel changing the current way you organized the your feeds. So, you have 3 options
 

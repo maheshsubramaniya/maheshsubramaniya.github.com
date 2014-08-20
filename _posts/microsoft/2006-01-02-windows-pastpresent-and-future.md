@@ -2,6 +2,7 @@
 layout: post
 title: Windows – Past,Present and Future
 categories: ['misc']
+tags: [microsoft,windows,news]
 ---
 <b>Windows - Past,Present and Future -</b> Longhorn (VISTA) Intro Video
 

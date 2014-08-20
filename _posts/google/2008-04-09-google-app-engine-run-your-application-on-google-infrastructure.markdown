@@ -1,17 +1,7 @@
 ---
 layout: post
 title: Google App Engine - Write you own web application using Google's infrastructure
-tags:
-- Google
-- Google Apps
-- Google Apps Engine
-- Misc...
-status: draft
-type: post
-published: false
-meta:
-  _edit_last: '1'
-  _edit_lock: '1262110665'
+tags: [Google ,Google Apps ,Google Apps Engine ,Misc]
 ---
 <img class="alignleft" style="float: left;" src="http://code.google.com/appengine/images/appengine_lowres.jpg" alt="Google App Engine" width="100" height="79" />You will surely feel great when you see your application runs as fast as Google Search. Isn't it? And now even you can write your application and run at the speed of Google and scale to the size of Google
 

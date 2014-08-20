@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ! 'Javascript: Create DOM object only once'
+title: 'Javascript: Create DOM object only once'
 categories: ['javascript']
-tags: javascript,dom,object
+tags: [javascript,dom,object]
 ---
 Browser [DOM](http://en.wikipedia.org/wiki/Document_Object_Model "Document Object Model")  is always created once and the same DOM is referred every time when used (like any other object model). It is not destroyed / deleted unless it is explicitly triggered.
 

@@ -2,6 +2,7 @@
 layout: post
 title: How to auto map Windows network drives
 categories: ['misc']
+tags: [microsoft,windows,network,hacks]
 ---
 Recently I had a strange problem. I've moved to a new PC in my office and the PC had all the stuffs installed which are needed for my work, but one. The one important stuff is all my Drive mappings to various network folders. I'm really irritated to map all the folders manually one by one, because I had about 9 drives of different folders from different server.<!--more-->
 

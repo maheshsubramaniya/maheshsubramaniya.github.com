@@ -1,19 +1,7 @@
 ---
 layout: post
 title: Google’s Trick to search Torrents
-tags:
-- Google
-- google search
-- torrent search engine
-- torrents
-- Trick
-- YouTorrent
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  _edit_lock: '1292779177'
+tags: [Google ,google search ,torrent search engine ,torrents ,Trick ,YouTorrent]
 ---
 Tired of searching your favorite torrent in a pile of torrent portal. Cool, you would have come across many torrent search engine sites like <a href="http://youtorrent.com">YouTorrent</a>, <a href="http://torrents.to">Torrents.to.</a>
 

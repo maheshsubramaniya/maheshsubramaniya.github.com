@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Session Affinity - Requests processed by same machine in a distributed environment.
-author: Mahesh Subramaniya
 categories: ['distributed']
+tags: [java,jee,j2ee,session affinity,websphere,was]
 ---
 
 **Session Affinity** is a technique ( *at the server side* ) which directs the request from the **same client **to the last processed server component(Application server). This is also known as **Sticky Session**. 

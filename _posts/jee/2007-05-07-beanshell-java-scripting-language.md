@@ -2,6 +2,7 @@
 layout: post
 title: BeanShell Java - Scripting
 categories: ['jee']
+tags: [java,jee,j2ee,beanshell,REPL]
 ---
 
 <div id="table-of-contents">

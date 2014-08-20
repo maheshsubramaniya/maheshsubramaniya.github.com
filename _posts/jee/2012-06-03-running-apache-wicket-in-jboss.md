@@ -4,6 +4,7 @@ title: Running Apache Wicket in JBoss
 tags: [wicket,jboss,j2ee,web application,presentation services]
 exceprt: Learn how to write a Hello World Wicket app, understand the structure of Wicket app, configure the JBoss server in eclipse and run the wicket application in the JBoss server.
 categories: ['jee']
+tags: [java,jee,j2ee,jboss,apache,apache wicket,how-to]
 ---
 
 There are several articles available seperately on writing wicket apps and configuring JBoss. But there aren't enough article which joins both the world. This article is an attempt to provide a tutorial to install, configure and run Wicket apps inside JBoss application server. I've used Eclipse as my IDE. 

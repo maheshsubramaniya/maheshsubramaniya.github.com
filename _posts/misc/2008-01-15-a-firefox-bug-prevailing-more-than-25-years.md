@@ -2,6 +2,7 @@
 layout: post
 title: A Firefox bug, prevailing more than 2.5 years
 categories: ['misc']
+tags: [mozilla,firefox,bug,news]
 ---
 [digg=http://digg.com/software/A_Firefox_bug_prevailing_more_than_2_5_years]Today  I noticed something fishy in the Google Reader while reading the Chennai MetBlog Post of <a href="http://chennai.metblogs.com/archives/2008/01/post_24.phtml">Iniya Pongal Nalvalthukkal</a>. I was viewing the post through Google Reader using Mozilla Firefox 2.0.0.11( Downloaded yesterday Jan-14-2008).
 

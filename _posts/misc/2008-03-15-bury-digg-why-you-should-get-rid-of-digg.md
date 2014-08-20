@@ -2,6 +2,7 @@
 layout: post
 title: Bury Digg - Why you should get rid of Digg!
 categories: ['misc']
+tags: [digg,news]
 ---
 
 <p style="text-align: center"><img width="207" src="../images/2008/03/477608284_ab55648e97.jpg" alt="477608284_ab55648e97.jpg" height="218" style="width: 289px; height: 226px" /></p>
