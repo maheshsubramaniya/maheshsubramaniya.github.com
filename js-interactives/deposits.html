@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deposits calculator</title>
+
+	<!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-git2.min.js"></script>
+
+	<!-- Tangle -->
+    <script type="text/javascript" src="Tangle-0.1.0/Tangle.js"></script>
+
+    <!-- TangleKit -->
+    <link rel="stylesheet" href="Tangle-0.1.0/TangleKit/TangleKit.css" type="text/css">
+    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/mootools.js"></script>
+    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/sprintf.js"></script>
+    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/BVTouchable.js"></script>
+    <script type="text/javascript" src="Tangle-0.1.0/TangleKit/TangleKit.js"></script>
+
+<!-- example -->
+	<script type="text/javascript">
+	//https://stackoverflow.com/questions/23798158/how-to-compound-the-interest-monthly-in-recurring-deposit-calculation
+
+		function humanTime(months){
+			if(months < 12){
+				return {"years":0,"months":months};
+			} else{
+				return {"years":Math.floor(months/12),"months":months % 12};
+			}
+		}
+
+		function CAGR(startingAmount,finalAmount,months){
+			var years = months/12;
+			var cagr = Math.pow((finalAmount/startingAmount),(1/years))-1
+			console.log("cagr",startingAmount,finalAmount,months,cagr)
+			return cagr;
+		}
+
+		function fixedDeposit(amount,months,rate){
+			var rate_per_quarter = rate / 400.0;
+			var quarters = months/3;
+
+			var totalInvestment = amount;
+			var finalAmount = amount * Math.pow(1+rate_per_quarter,quarters);
+			var totalInterest = finalAmount - totalInvestment;
+
+			var effectiveReturns = CAGR(totalInvestment,finalAmount,months);
+
+			return {"totalInvestment":totalInvestment,"totalInterest":totalInterest,"finalAmount":finalAmount, "effectiveReturns":effectiveReturns };
+		}
+
+		function recurringDeposit(monthlyAmount,months,rate){
+
+			var rate_per_quarter = rate / 400.0;
+			var quarters = months/3;
+
+			var a = Math.pow(1+rate_per_quarter,quarters);
+			var b = Math.pow(1+rate_per_quarter,-1/3);
+
+			var multiplyingFactor = ((a-1)/(1-b)) || 0;
+			var totalInvestment = monthlyAmount * months;
+
+			var finalAmount = totalInvestment;
+			if(multiplyingFactor != 0){
+				finalAmount = monthlyAmount * multiplyingFactor;
+			}
+
+			var totalInterest = finalAmount - totalInvestment;
+
+			var effectiveReturns = CAGR(totalInvestment,finalAmount,months);
+
+			return {"totalInvestment":totalInvestment,"totalInterest":totalInterest,"finalAmount":finalAmount, "effectiveReturns":effectiveReturns };
+		}
+
+		function calculateRecurringAmountForTarget(targetAmount,months,rate){
+			
+			var rate_per_quarter = rate / 400.0;
+			var quarters = months/3;
+
+			var a = Math.pow(1+rate_per_quarter,quarters)-1;
+			var b = 1-Math.pow(1+rate_per_quarter,-1/3);
+
+			var monthlyRecurringAmount = targetAmount * b / a;
+			return {"monthlyRecurringAmount":monthlyRecurringAmount};
+		}
+
+		function setupSimpleRecurring () {
+			var element = $("#simpleRecurring").get(0);
+
+			var tangle = new Tangle(element, {
+				initialize: function () {
+					this.monthlyRecurringAmount = 100.0;
+					this.months = 12;
+					this.rate = 8.0;
+					this.inflationRate = 3.0;
+				},
+				update: function () {
+
+					//deposit calculation
+					var recurringResult = recurringDeposit(this.monthlyRecurringAmount,this.months,this.rate);
+					this.finalAmount = recurringResult.finalAmount;
+					this.totalInterest = recurringResult.totalInterest;
+					this.totalInvestment = recurringResult.totalInvestment;
+					
+					//inflation adjustment
+					var recurringResultInflation = recurringDeposit(this.monthlyRecurringAmount,this.months,this.inflationRate);
+					//InflationAdjust = Maturity - Interest lost in Inflation
+					this.finalAmountInflationAdjusted = recurringResult.finalAmount-recurringResultInflation.totalInterest;
+					this.inflationAmount = recurringResultInflation.finalAmount;
+					
+					//loss calculation
+					this.lossDueToInflation = this.finalAmount - this.finalAmountInflationAdjusted || 0;
+					this.lossDueToInflationPercent = (this.finalAmount - this.finalAmountInflationAdjusted)/this.finalAmount*100 || 0;
+
+
+					//effective returns
+					this.effectiveReturns = recurringResult.effectiveReturns*100;
+					var inflationCAGR = CAGR(this.totalInvestment,this.finalAmountInflationAdjusted,this.months)*100;
+					this.effectiveReturnsAfterInflation =  inflationCAGR|| 0;
+
+
+
+					//formatting
+					var ht = humanTime(this.months);
+					this.humanMonths = ht.months;
+					this.humanYears = ht.years;
+					
+				}
+			});
+		}
+
+		function setupFixedDeposit() {
+			var element = $("#fixedDeposit").get(0);
+
+			var tangle = new Tangle(element, {
+				initialize: function () {
+					this.investmentAmount = 100000.0;
+					this.months = 12;
+					this.rate = 8.0;
+					this.inflationRate = 3.0;
+				},
+				update: function () {
+
+					//deposit calculation
+					var recurringResult = fixedDeposit(this.investmentAmount,this.months,this.rate);
+					this.finalAmount = recurringResult.finalAmount;
+					this.totalInterest = recurringResult.totalInterest;
+					this.totalInvestment = recurringResult.totalInvestment;
+					
+					//inflation adjustment
+					var recurringResultInflation = fixedDeposit(this.investmentAmount,this.months,this.inflationRate);
+					//InflationAdjust = Maturity - Interest lost in Inflation
+					this.finalAmountInflationAdjusted = recurringResult.finalAmount-recurringResultInflation.totalInterest;
+					this.inflationAmount = recurringResultInflation.finalAmount;
+					
+					//loss calculation
+					this.lossDueToInflation = this.finalAmount - this.finalAmountInflationAdjusted || 0;
+					this.lossDueToInflationPercent = (this.finalAmount - this.finalAmountInflationAdjusted)/this.finalAmount*100 || 0;
+
+
+					//effective returns
+					this.effectiveReturns = recurringResult.effectiveReturns*100;
+					var inflationCAGR = CAGR(this.totalInvestment,this.finalAmountInflationAdjusted,this.months)*100;
+					this.effectiveReturnsAfterInflation =  inflationCAGR|| 0;
+
+
+
+					//formatting
+					var ht = humanTime(this.months);
+					this.humanMonths = ht.months;
+					this.humanYears = ht.years;
+					
+				}
+			});
+		}
+
+		function setupRecurringForTargetAmount() {
+			var element = $("#recurringForTarget").get(0);
+
+			var tangle = new Tangle(element, {
+				initialize: function () {
+					this.finalAmount = 100000.0;
+					this.months = 12;
+					this.rate = 8.0;
+				},
+				update: function () {
+
+					var recurringResult = calculateRecurringAmountForTarget(this.finalAmount,this.months,this.rate);
+
+					this.monthlyRecurringAmount = recurringResult.monthlyRecurringAmount;
+
+					//formatting
+					var ht = humanTime(this.months);
+					this.humanMonths = ht.months;
+					this.humanYears = ht.years;
+
+				}
+			});
+		}
+
+		$(window).ready(function(){
+			setupSimpleRecurring();
+			setupRecurringForTargetAmount();
+			setupFixedDeposit();
+		});
+
+	</script>
+
+</head>
+<body>
+
+<h1>Recurring Deposit</h1>
+
+<div id="simpleRecurring">
+	<h2>Simple Recurring Deposit</h2>
+	<div class="number input"><span>Monthly Recurring:</span><span data-var="monthlyRecurringAmount" class="TKNumberField" data-min="0" data-max="120" data-format="%.02f"></span></div>
+
+	<div class="number input"><span>Months Invested:</span><span data-var="months" class="TKNumberField" data-min="0"></span>(<span class="humanTime" data-var="humanYears"> years </span><span class="humanTime" data-var="humanMonths"> months </span>)
+	</div>
+
+	<div class="number input"><span>Investment Rate:</span><span data-var="rate" class="TKNumberField" data-min="0"> % per year</span></div>
+
+	<div class="number input"><span>Inflation(Projection):</span>
+		<span data-var="inflationRate" class="TKNumberField" data-min="0"> % per year</span>
+	</div>
+
+
+	<!-- Calculate amount -->
+	<div class="number output"><span class="totalinvestment">Total Investment:</span><span data-var="totalInvestment" data-format="%.02f"></span></div>
+
+	<div class="number output">
+		<span class="final">Maturity Amount:</span><span data-var="finalAmount" data-format="%.02f"></span>
+		(<span data-var="effectiveReturns" data-format="%.02f">%</span> Returns)
+	</div>	
+
+	<div class="number output"><span class="interest">Interest Gained:</span><span data-var="totalInterest" data-format="%.02f"></span></div>
+
+
+
+	<div class="number output">
+		<span class="final">Final Amount (Inflation Adjusted):</span><span data-var="finalAmountInflationAdjusted" data-format="%.02f"></span>
+		(<span data-var="effectiveReturnsAfterInflation" data-format="%.02f">%</span> Returns)
+	</div>
+
+	<div class="number output"><span class="final">Loss Due to Inflation:</span>
+		<span data-var="lossDueToInflation" data-format="%.02f"></span>
+		(<span data-var="lossDueToInflationPercent" data-format="%.02f">%</span> Returns)
+	</div>
+
+</div>
+
+<div id="recurringForTarget">
+<h2>How much I should invest monthly?</h2>
+
+	<div class="number input"><span>Final Amount:</span><span data-var="finalAmount" class="TKNumberField" data-min="0" data-format="%.02f"></span></div>
+
+	<div class="number input"><span>Months Invested:</span><span data-var="months" class="TKNumberField" data-min="0"></span>(<span class="humanTime" data-var="humanYears"> years </span><span class="humanTime" data-var="humanMonths"> months </span>)</div>
+
+	<div class="number input"><span>Rate:</span><span data-var="rate" class="TKNumberField" data-min="0"> % per year</span></div>
+
+	<div class="number output"><span>Monthly Recurring:</span><span data-var="monthlyRecurringAmount"  data-format="%.02f"></span></div>
+</div>
+
+
+<div id="fixedDeposit">
+
+	<h2>Fixed Deposit</h2>
+
+	<div class="number input"><span>Investment Amount:</span><span data-var="investmentAmount" class="TKNumberField" data-min="0" data-max="120" data-format="%.02f"></span></div>
+
+	<div class="number input"><span>Months Invested:</span><span data-var="months" class="TKNumberField" data-min="0"></span>(<span class="humanTime" data-var="humanYears"> years </span><span class="humanTime" data-var="humanMonths"> months </span>)
+	</div>
+
+	<div class="number input"><span>Rate(Annual):</span><span data-var="rate" class="TKNumberField" data-min="0"></span></div>
+
+	<div class="number input"><span>Inflation(Projection):</span>
+		<span data-var="inflationRate" class="TKNumberField" data-min="0"></span>
+	</div>
+
+
+	<!-- Calculate amount -->
+	<div class="number output"><span class="totalinvestment">Total Investment:</span><span data-var="totalInvestment" data-format="%.02f"></span></div>
+
+	<div class="number output">
+		<span class="final">Maturity Amount:</span><span data-var="finalAmount" data-format="%.02f"></span>
+		(<span data-var="effectiveReturns" data-format="%.02f">%</span> Returns)
+	</div>	
+
+	<div class="number output"><span class="interest">Interest Gained:</span><span data-var="totalInterest" data-format="%.02f"></span></div>
+
+
+
+	<div class="number output">
+		<span class="final">Final Amount (Inflation Adjusted):</span><span data-var="finalAmountInflationAdjusted" data-format="%.02f"></span>
+		(<span data-var="effectiveReturnsAfterInflation" data-format="%.02f">%</span> Returns)
+	</div>
+
+	<div class="number output"><span class="final">Loss Due to Inflation:</span>
+		<span data-var="lossDueToInflation" data-format="%.02f"></span>
+		(<span data-var="lossDueToInflationPercent" data-format="%.02f">%</span> Returns)
+	</div>	
+</div>
+
+<div id="stockInvestingOneTime">
+	<h2>Stock Investing - One time</h2>
+
+	<div class="number input"><span>Purchase Amount:</span><span data-var="stockPurchaseAmount" class="TKNumberField" data-min="0" data-format="%.02f"></span></div>
+
+	<div class="number input"><span>Purchase Amount:</span><span data-var="stockPurchaseAmount" class="TKNumberField" data-min="0" data-format="%.02f"></span></div>
+	
+</div>
+
+</body>
+</html>
