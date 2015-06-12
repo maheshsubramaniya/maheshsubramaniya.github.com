@@ -1,0 +1,36 @@
+<link rel="import"
+      href="http://www.polymer-project.org/1.0/samples/components/polymer/polymer.html">
+
+<dom-module id="display-tag">
+
+  <template>
+    <span>{{label}}</span>:<span id="display"></span>
+  </template>
+
+  <script>
+    Polymer({
+      is: "display-tag",
+
+      properties: {
+        label: {
+          type: String,
+          value:""
+        },
+        variable: {
+          type: String,
+          value:""
+        },
+        format: {
+          type: String,
+          value:""
+        },
+
+      },
+      ready: function() {
+        this.$.display.setAttribute("data-var",this.variable);
+        this.$.display.setAttribute("data-format",this.format);
+      }
+    });
+  </script>
+
+</dom-module>

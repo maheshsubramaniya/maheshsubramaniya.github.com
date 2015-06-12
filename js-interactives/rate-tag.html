@@ -1,0 +1,54 @@
+<link rel="import"
+      href="http://www.polymer-project.org/1.0/samples/components/polymer/polymer.html">
+
+<dom-module id="rate-tag">
+
+  <template>
+    <span>{{label}}</span>:
+    <span id="rate" data-min="0">%</span>
+    <span>{{suffix}}</span>
+  </template>
+
+  <script>
+    Polymer({
+      is: "rate-tag",
+
+      properties: {
+        label: {
+          type: String,
+          value:""
+        },
+        variable: {
+          type: String,
+          value:""
+        },
+        format: {
+          type: String,
+          value:""
+        },
+        type: {
+          type: String,
+          value:""
+        },
+        suffix:{
+          type: String,
+        }
+      },
+      ready: function() {
+        this.$.rate.setAttribute("data-var",this.variable);
+
+        if(this.type && this.type == 'input'){
+          this.fieldType = 'TKNumberField';
+        } else {
+          this.fieldType = '';
+        }
+
+        this.suffix = this.suffix || "per year";
+
+        this.$.rate.setAttribute("class",this.fieldType);
+        this.$.rate.setAttribute("data-format",this.format);
+      }
+    });
+  </script>
+
+</dom-module>

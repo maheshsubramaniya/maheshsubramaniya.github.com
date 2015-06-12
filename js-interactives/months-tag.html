@@ -1,0 +1,31 @@
+<link rel="import"
+      href="http://www.polymer-project.org/1.0/samples/components/polymer/polymer.html">
+
+<dom-module id="months-tag">
+
+  <template>
+    <span>{{label}}</span>:
+    <span id="months" class="TKNumberField" data-min="0"></span>
+  </template>
+
+  <script>
+    Polymer({
+      is: "months-tag",
+
+      properties: {
+        label: {
+          type: String,
+          value:""
+        },
+        variable: {
+          type: String,
+          value:""
+        },
+      },
+      ready: function() {
+        this.$.months.setAttribute("data-var",this.variable);
+      }
+    });
+  </script>
+
+</dom-module>
