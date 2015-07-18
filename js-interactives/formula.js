@@ -1,5 +1,5 @@
 
-function humanTime(months){
+function humanDate(months){
 	if(months < 12){
 		return {"years":0,"months":months};
 	} else{
@@ -26,6 +26,32 @@ function fixedDeposit(amount,months,rate){
 	return {"totalInvestment":totalInvestment,"totalInterest":totalInterest,"finalAmount":finalAmount, "effectiveReturns":effectiveReturns };
 }
 
+function fixedDepositWithInflationAdjustment(amount,months,rate,inflationRate){
+
+	//deposit calculation
+	var data = fixedDeposit(amount,months,rate);
+	
+	//inflation adjustment
+	var recurringResultInflation = recurringDeposit(amount,months,inflationRate);
+	//InflationAdjust = Maturity - Interest lost in Inflation
+	data.finalAmountInflationAdjusted = data.finalAmount-recurringResultInflation.totalInterest;
+	data.inflationAmount = recurringResultInflation.finalAmount;
+	
+	//loss calculation
+	data.lossDueToInflation = data.finalAmount - data.finalAmountInflationAdjusted || 0;
+	data.lossDueToInflationPercent = (data.finalAmount - data.finalAmountInflationAdjusted)/this.finalAmount*100 || 0;
+
+
+	//effective returns
+	data.effectiveReturns = data.effectiveReturns*100;
+	var inflationCAGR = CAGR(data.totalInvestment,data.finalAmountInflationAdjusted,data.months)*100;
+	data.effectiveReturnsAfterInflation =  inflationCAGR|| 0;
+
+
+	return data;
+
+}
+
 function recurringDeposit(monthlyAmount,months,rate){
 
 	var rate_per_quarter = rate / 400.0;
@@ -47,6 +73,31 @@ function recurringDeposit(monthlyAmount,months,rate){
 	var effectiveReturns = CAGR(totalInvestment,finalAmount,months);
 
 	return {"totalInvestment":totalInvestment,"totalInterest":totalInterest,"finalAmount":finalAmount, "effectiveReturns":effectiveReturns };
+}
+
+function reccuringDepositWithInflationAdjustment(monthlyAmount,months,rate,inflationRate){
+
+	//deposit calculation
+	var data = recurringDeposit(monthlyAmount,months,rate);
+	
+	//inflation adjustment
+	var recurringResultInflation = recurringDeposit(monthlyAmount,months,inflationRate);
+	//InflationAdjust = Maturity - Interest lost in Inflation
+	data.finalAmountInflationAdjusted = data.finalAmount-recurringResultInflation.totalInterest;
+	data.inflationAmount = recurringResultInflation.finalAmount;
+	
+	//loss calculation
+	data.lossDueToInflation = data.finalAmount - data.finalAmountInflationAdjusted || 0;
+	data.lossDueToInflationPercent = (data.finalAmount - data.finalAmountInflationAdjusted)/this.finalAmount*100 || 0;
+
+
+	//effective returns
+	data.effectiveReturns = data.effectiveReturns*100;
+	var inflationCAGR = CAGR(data.totalInvestment,data.finalAmountInflationAdjusted,data.months)*100;
+	data.effectiveReturnsAfterInflation =  inflationCAGR|| 0;
+
+
+	return data;
 }
 
 function calculateRecurringAmountForTarget(targetAmount,months,rate){
@@ -98,7 +149,7 @@ function setupSimpleRecurring () {
 
 
 			//formatting
-			var ht = humanTime(this.months);
+			var ht = humanDate(this.months);
 			this.humanMonths = ht.months;
 			this.humanYears = ht.years;
 			
@@ -143,7 +194,7 @@ function setupFixedDeposit() {
 
 
 			//formatting
-			var ht = humanTime(this.months);
+			var ht = humanDate(this.months);
 			this.humanMonths = ht.months;
 			this.humanYears = ht.years;
 			
@@ -167,7 +218,7 @@ function setupRecurringForTargetAmount() {
 			this.monthlyRecurringAmount = recurringResult.monthlyRecurringAmount;
 
 			//formatting
-			var ht = humanTime(this.months);
+			var ht = humanDate(this.months);
 			this.humanMonths = ht.months;
 			this.humanYears = ht.years;
 
