@@ -146,6 +146,10 @@ goldApp.controller('gController', function($scope) {
 		return get22ctPriceEquivalentOfForeignGoldInIndia()/get22CtJewelPriceInIndiaAfterCharges();
 	}
 
+	ctrl.getIndianEquivalentof22CtPerGramAsJewelsPurchasedInIndia = function(){
+		return (1/(1*1.1*1.01));
+	}
+
 });
 
 
