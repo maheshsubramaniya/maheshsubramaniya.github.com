@@ -1,0 +1,180 @@
+<html  ng-app="goldApp">
+  <head>
+      <title>Gold buying India vs Foreign</title>
+
+      <link rel="stylesheet" href="bower_components/angucomplete-alt/angucomplete-alt.css" type="text/css">
+
+      <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+      <script type="text/javascript" src="bower_components/angucomplete-alt/angucomplete-alt.js"></script>
+
+      <script type="text/javascript" src="gold.js"></script>
+
+
+      <style type="text/css">
+
+      footer {
+         position:absolute;
+         bottom:0;
+         width:100%;
+         font-size: 12px;
+         line-height: normal;
+      }      
+
+      body{
+
+        font-family: Arial, sans-serif;
+        line-height: 30px;
+      }
+
+      .left{
+        float: left;
+      }
+
+      .right{
+        float: left;
+      }
+
+      .legend{
+        border-left: 2px solid #123;
+        font-size: 12px;
+      }
+
+      .profitLoss{
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+
+  input[type="number"] {
+    font-size: 18px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    padding: 10px;
+    border: none;
+    border-bottom: solid 3px #EEC900;
+    transition: border 0.3s;
+    width: 20%;
+    /*outline: none;*/
+  }
+
+/*  input[type="number"]:focus,
+  input[type="number"].focus {
+    border-bottom: solid 2px #969696;
+  }
+*/  .amount{
+    font-size: 18px;
+    text-indent: 50px;
+  }
+
+  .result{
+    height:50%;
+    padding-left:20px;
+    margin-top:10px;
+    border-left:4px solid #EEC900;
+  }
+
+  .subscript{
+    font-size: 10px;
+    color: blue;
+    font-style: italic;
+  }
+
+  .currency{
+    /*font-size: 20px;*/
+  }
+          
+
+.currencyinput {
+    border: 0px;
+}
+.currencyinput input {
+    border: 0;
+}
+
+
+      </style>
+
+  
+  </head>
+
+  <body  ng-controller="gController as gctrl" ng-init="gctrl.computeProfitOrLossForCoin()">
+
+
+  <div>
+      <h2>Is gold buying profitable outside india?</h2>
+
+      <div class="left" style="width:30%;margin-left:100px;">
+
+        <div class="row">
+          <span>1 USD = </span><spanclass="currencyinput"><span class="currency">&#x20B9;</span><input type="number" ng-model="usdToInr" ng-change="gctrl.computeProfitOrLossForCoin()" min="1"></input> INR </span> 
+        </div>
+
+        <div class="row">
+          <span>Outside India 1oz - 24ct = </span><span class="currency">$</span><span><input type="number" ng-model="goldPriceOutsideIndiaPerOunceInUSD" ng-change="gctrl.computeProfitOrLossForCoin()"></input></span> 
+          <span class="subscript"> ( {{goldPriceOutsideIndiaPerOunceInUSD/31.1*usdToInr | rupees}} / gram) </span>
+        </div>
+
+        <div class="row">
+          <span>India - 24ct / gram</span> = <span class="currency">&#x20B9;</span><span> <input type="number" ng-model="goldPriceIndia24ctPerGramInINR" ng-change="gctrl.computeProfitOrLossForCoin()"></input></span>
+        </div>
+
+        <div class="row">
+          <span>India - 22ct / gram </span> = <span class="currency">&#x20B9;</span><span> <input type="number" ng-model="goldPriceIndia22ctPerGramInINR" ng-change="gctrl.computeProfitOrLossForCoin()"></input></span>
+        </div>
+
+        <div class="row">
+          <span>Indian Customs duty / 10 grams </span> = <span class="currency">&#x20B9;</span><span> <input type="number" ng-model="customsDutyPer10Grams" ng-change="gctrl.computeProfitOrLossForCoin()"></input></span>
+        </div>
+
+        <div class="row">
+          <span>Value Addition</span> = <span> <input type="number" ng-model="valueAddition" ng-change="gctrl.computeProfitOrLossForCoin()"></input> %  </span>
+        </div>
+
+        <div class="row">
+          <span>VAT</span> = <span> <input type="number" ng-model="valueAddedTax" ng-change="gctrl.computeProfitOrLossForCoin()"></input> %  </span>
+        </div>
+
+      </div>
+
+      <div class="right result">
+        <h3>If you hold as Coin<span class="subscript">(after exchange rates &amp; duties)</span></h3>
+
+        <div class="row">
+          <span>1 gm of 24ct purchased outside India will buy you </span><span class="profitLoss">{{gctrl.getIndianEquivalentof22CtInGrams()  | number : 2 }} gms of 22ct</span>  in India        </div>
+
+
+        <div class="row">
+          <span>8 gm  ( 1 sov ) of 24ct purchased outside India will buy you </span><span class="profitLoss">{{gctrl.getIndianEquivalentof22CtInGrams() * 8 | number : 2 }} gms ( ~ {{gctrl.getIndianEquivalentof22CtInGrams()  * 8 |soverign }} ) of 22ct</span>
+        </div>
+
+        <h3>If you hold as Jewellery<span class="subscript">( after exchange rates,duties, making charges etc.,)</span></h3>
+
+
+        <div class="row">
+          <span>1 gm of 24ct purchased outside India will buy you </span><span class="profitLoss">{{gctrl.getIndianEquivalentof22CtPerGramAsJewels()  | number : 2 }} grams of 22ct</span>  in India
+        </div>
+
+       <div class="row">
+          <span>8 gm  ( 1 sov ) of 24ct purchased outside India will buy you </span><span class="profitLoss">{{gctrl.getIndianEquivalentof22CtPerGramAsJewels() * 8 | number : 2 }} gms ( ~ {{gctrl.getIndianEquivalentof22CtPerGramAsJewels()  * 8 |soverign }} ) of 22ct</span>
+        </div>
+
+
+      </div>
+
+  </div>
+
+  <footer>
+    <h4>References</h4>
+    <ol>
+      <li><div><a href="https://www.google.com/search?q=1+troy+oz+%3D+%3F+grams">1 oz (troy) = 31.1 grams</a></div></li>
+      <li><div><a href="https://en.wikipedia.org/wiki/Fineness#Gold">24 ct = 99.99% purity</a></div> </li>
+      <li><div><a href="https://en.wikipedia.org/wiki/Fineness#Gold">22 ct = 91.6% purity</a></div> </li>
+      <li><div><a href="http://ajithprasad.com/gold-jewellery-buying-tips-wastage-charges-making-charges-va-karat-916-bis-hallmark/">Value Addition - Wastage, Making Charges ( Most commonly 10% for Jewels )</a></div></li>
+      <li><div><a href="http://www.tnvat.gov.in/english/VATSCHE_ALPHA_270312.pdf#page=7">VAT - Value Added Tax ( Generally 1% )</a></div></li>
+    </ol>
+  </footer>
+    
+  </body>
+  
+</html>
