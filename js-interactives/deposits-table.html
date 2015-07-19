@@ -1,0 +1,120 @@
+<html   ng-app="deposistsCalculator">
+  <head>
+      <title>Deposits calculator</title>
+
+      <link rel="stylesheet" href="bower_components/angucomplete-alt/angucomplete-alt.css" type="text/css">
+
+      <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+      <script type="text/javascript" src="bower_components/angucomplete-alt/angucomplete-alt.js"></script>
+
+      <script type="text/javascript" src="formula.js"></script>
+      <script type="text/javascript" src="deposits-table.js"></script>
+
+      <style>
+
+        table.fixed {
+          table-layout:fixed;
+          width:100%;
+        }
+
+        table.fixed, table.fixed td, table.fixed tr{
+          border: 1px solid black;
+        }
+        
+        table.fixed td { 
+          overflow: hidden; 
+        }
+
+        .small{
+          font-size: x-small;
+          clear: left;
+          display:block;
+          color: blue;
+        }
+
+        input
+        {
+            border: 0px solid #000000;
+            border-bottom-width: 1px;
+            background-color: transparent;
+        }
+        
+      </style>
+  
+  </head>
+
+  <body>
+
+    <div ng-controller="DepositsController as dctrl" ng-init="dctrl.addDeposit()">
+
+    <button ng-click="dctrl.addDeposit()">New Deposit</button>
+      <table class="fixed" id="deposits-table">
+
+        <tr>
+          <td width="3%">Ref</td>
+          <td width="10%">Deposit</td>
+          <td width="10%">Amount</td>
+          <td width="7%">Months</td>
+          <td width="10%">Interest Rate</td>
+          <td width="10%">Maturity</td>
+          <td width="10%">Interest Gained</td>
+          <td width="10%">Inflation Rate</td>
+          <td width="10%">Inflation Adjusted</td>
+        </tr>
+
+        <tr ng-repeat="d in deposits track by $index" >
+          <td>{{d.ref}}</td>
+          
+          <td>
+            <select ng-model="d.deposit" ng-change="dctrl.calculate(d)">
+              <option value="RD">Recurring Deposit</option>
+              <option value="FD">Fixed Deposit</option>
+            </select>
+          </td>
+
+          <td>
+            <!-- &#8377 <input type="text" ng-model="d.amount" ng-change="dctrl.calculate(d)"> -->
+
+
+              <angucomplete-alt 
+                initial-value="d.amount"
+                input-changed="dctrl.calculate(d)"
+                id="ex1"
+                placeholder="Amount / Reference"
+                pause="100"
+                local-data="references"
+                search-fields="title"
+                title-field="title"
+                minlength="1"
+                />
+
+          </td>
+          <td>
+            <input type="text" ng-model="d.months" ng-change="dctrl.calculate(d)" maxlength="4" size="5">
+            <span class="small">{{d.months | humanDate}}</span> 
+          </td>
+          <td>
+            <input type="text" ng-model="d.interest_rate" ng-change="dctrl.calculate(d)" maxlength="4" size="5"> %
+          </td>
+          <td>
+              {{d.maturity| rupees:2}}
+
+              <span class="small">(Total Investment: {{d.totalInvestment| rupees:2}})</span>              
+
+          </td>
+          <td>
+            <span>{{d.interest_gained| currency:'&#8377 ':2}}</span>
+          </td>
+          <td>
+            <input type="text" ng-model="d.inflation_rate" ng-change="dctrl.calculate(d)" maxlength="4" size="5"> %
+          </td>
+          <td>{{d.inflation_adjusted| currency:'&#8377 ':2}}</td>
+        </tr>
+
+      </table>
+
+    </div>
+    
+  </body>
+  
+</html>

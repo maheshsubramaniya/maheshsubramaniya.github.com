@@ -1,0 +1,48 @@
+<html>
+  <head>
+  <script type="text/javascript">
+    
+  </script>
+
+  	<title>Deposits calculator</title>
+
+	<!-- polymer -->
+	<script src="polymer/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="rate-tag.html">
+	<link rel="import" href="months-tag.html">
+	<link rel="import" href="human-time.html">
+	<link rel="import" href="amount-tag.html">
+	<link rel="import" href="display-tag.html">
+    
+	
+	<!-- jquery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-git2.min.js"></script>
+	
+	<!-- Tangle -->
+	<script type="text/javascript" src="Tangle-0.1.0/Tangle.js"></script>
+	
+	<!-- TangleKit -->
+	<link rel="stylesheet" href="Tangle-0.1.0/TangleKit/TangleKit.css" type="text/css">
+	<script type="text/javascript" src="Tangle-0.1.0/TangleKit/mootools.js"></script>
+	<script type="text/javascript" src="Tangle-0.1.0/TangleKit/sprintf.js"></script>
+	<script type="text/javascript" src="Tangle-0.1.0/TangleKit/BVTouchable.js"></script>
+	<script type="text/javascript" src="Tangle-0.1.0/TangleKit/TangleKit.js"></script>
+	
+	<!-- application script-->
+	<script src="formula.js"></script>
+
+	<!-- example -->
+	<script type="text/javascript">
+	  //https://stackoverflow.com/questions/23798158/how-to-compound-the-interest-monthly-in-recurring-deposit-calculation
+	  
+	  $(window).ready(function(){
+	      setupSimpleRecurring();
+	      setupRecurringForTargetAmount();
+	      setupFixedDeposit();
+	  });
+	  
+	</script>
+	
+  
+  </head>
+</html>
