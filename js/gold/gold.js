@@ -147,7 +147,10 @@ goldApp.controller('gController', function($scope) {
 	}
 
 	ctrl.getIndianEquivalentof22CtPerGramAsJewelsPurchasedInIndia = function(){
-		return (1/(1*1.1*1.01));
+			var valueAddition = 1+$scope.valueAddition/100.0;
+			var vat = 1 + $scope.valueAddedTax / 100;
+
+		return (1/(valueAddition*vat));
 	}
 
 });
