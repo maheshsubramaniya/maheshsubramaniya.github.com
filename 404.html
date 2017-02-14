@@ -6,35 +6,4 @@ title: 404
 <h3>Oops!</h3>
 <p>
 	My bad! I was moving around the posts from various blogging platforms and may be lost it or moved to a different url. You may want to search for the posts and I'm sure you would find it.
-	<br/>
-	
-	Please use the search and it will try to get the artile you are looking for.
-	
-	<form>
-	  <input type="text" id="st-search-input" class="404-search st-search-input" style="width: 80%;height: 2.3em;margin-left: 15%;" />
-	</form>
-
-	<!-- Place this div where you would like the results to be displayed. -->
-	<div id="st-results-container" style="margin-bottom:1em;"></div>
-
-	<p>
-	If you haven't found it yet, I'm sorry. You may still be interested in below posts or <a href="{{site.url}}/posts.html" alt="Archives">browse my archives</a>.
-	</p>
-	<h3>Recent posts</h3>
-	<ul class="no-bullet">
-		{% for post in site.posts limit:10 %}
-			{% if post.categories contains 'not-home' %}
-			{% else %}
-				<li>
-					<article class="homepage post">
-						<header class="post-header">
-							  <h5 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
-						</header>
-					</article>
-				</li>
-			{% endif %}
-		{% endfor %}
-	</ul>
-
-
 </p>

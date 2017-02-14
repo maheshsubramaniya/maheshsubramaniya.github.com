@@ -5,7 +5,6 @@ layout: default
 <div id="wrapper">
 
 <article class="post single">
-
 	<header class="post-header">
 		  <h2 class="post-title">{{ page.title }}</h2>
 	</header>
@@ -13,9 +12,9 @@ layout: default
 
 
 
-	<small>	
+	<small>
 		<div class="tags">
-			Tagged under: 
+			Tagged under:
 			{% for tag in page.tags  %}
 				<span>{{tag}},</span>
 			{% endfor %}
@@ -24,53 +23,33 @@ layout: default
 	</small>
 
 	<nav class="page-navigation">
-	        <div class="clear">&nbsp;</div> 
-	        <div class="left"> 
-	        {% if page.previous.url %} 
-	                <a href="{{page.previous.url}}" title="Previous Post: 
-	{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
-	        {% endif %} 
-	        </div> 
+	        <div class="clear">&nbsp;</div>
+	        <div class="left">
+	        {% if page.previous.url %}
+	                <a href="{{page.previous.url}}" title="Previous Post:
+	{{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+	        {% endif %}
+	        </div>
 
-	        <div class="right"> 
-	        {% if page.next.url %} 
-	                <a href="{{page.next.url}}" title="next Post: 
-	{{page.next.title}}">{{page.next.title}} &raquo; </a> 
-	        {% endif %} 
-	        </div> 
-	        <div class="clear">&nbsp;</div> 
+	        <div class="right">
+	        {% if page.next.url %}
+	                <a href="{{page.next.url}}" title="next Post:
+	{{page.next.title}}">{{page.next.title}} &raquo; </a>
+	        {% endif %}
+	        </div>
+	        <div class="clear">&nbsp;</div>
 
 	</nav>
 
-	<div id="related_posts">
-		<h3>Related Posts</h3>
-		<ul>
-		{% for post in site.related_posts limit:5 %}
-		  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}	
-		</ul>
-	</div>
-	
   	<footer >
 
-<a class="punch" href="https://twitter.com/intent/tweet?text=Nice Read: {{ page.title }}&url={{site.url}}{{page.url}}&via={{site.twitter_id}}">
-	<span style="
-	    background: url('https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_32.png') no-repeat 0 0;
-	    width: 32px;
-	    height: 32px;
-	    display: block;
-	    float: left;
-	    margin-left: 10px;
-	"></span>
-	<span style="
-	    float: left;
-	    margin-left: 10px;
-	">I like it</span>
-	</a>
-
-		<small class="right">	
+		<small class="right">
 			Published on: <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
 		</small>
+		
+		<div>
+			<a class="twitter-follow-button" href="https://twitter.com/{{site.twitter_id}}" title="{{site.twitter_id}}">@{{site.twitter_id}}</a>
+		</div>
 
   	</footer>
   	<!-- by {{site.author}} -->
