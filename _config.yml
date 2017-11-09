@@ -18,5 +18,5 @@ excerpt_separator: ""
 url_photo: http://500px.com/maheshsubramaniya
 url_food: food.html
 url_tamil: tamil.html
-gems:
+plugins:
  - jekyll-sitemap

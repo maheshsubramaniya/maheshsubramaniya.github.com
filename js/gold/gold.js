@@ -18,20 +18,20 @@ goldApp.controller('gController', function($scope) {
 
 	var ctrl = this;
 
-	$scope.usdToInr = 63.00;
-	$scope.ozToGram = 31.10;
-	$scope.goldPriceOutsideIndiaPerOunceInUSD = 1200.00;
-	$scope.goldPriceIndia24ctPerGramInINR = 2600.0;
-	$scope.goldPriceIndia22ctPerGramInINR = 2434.00;
-	$scope.customsDutyPer10Grams = 750;
+	$scope.usdToInr = 1.00;
+	$scope.ozToGram = 1.00;
+	$scope.goldPriceOutsideIndiaPerOunceInUSD = 1.00;
+	$scope.goldPriceIndia24ctPerGramInINR = 1.0;
+	$scope.goldPriceIndia22ctPerGramInINR = 0.916;
+	$scope.customsDutyPer10Grams = 0;
 
 	$scope.profitOrLossBuyingOutsideIndiaInINR = 0.0;
 	$scope.profitOrLossPercentBuyingOutsideIndia = 0.0;
 	$scope.profitOrLoss = MARGINAL_OR_NO_PROFIT;
 
 	//as jewellery
-	$scope.valueAddition = 10;
-	$scope.valueAddedTax = 1;
+	$scope.valueAddition = 0;
+	$scope.valueAddedTax = 0;
 	$scope.goldValue22ctAsJewel = 0.0;
 	$scope.profitOrLossAsJewellery = MARGINAL_OR_NO_PROFIT;
 	$scope.profitOrLossPercentBuyingOutsideIndiaAsJewellery = 0;
@@ -95,12 +95,13 @@ goldApp.controller('gController', function($scope) {
 
 		$scope.profitOrLossBuyingOutsideIndiaAsJewelleryInINR =  isProfitOrLossPercent(gold_value_22ct_as_jewel,$scope.goldPriceIndia22ctPerGramInINR)
 
+    return $scope.profitOrLoss + ":" + Math.round((ctrl.getIndianEquivalentof22CtInGrams()-1)*100,2) + "%";
 
 	}
 
 	function costOfForeignGoldInIndia(){
 		var us_gold_1gm_usd = priceOfGoldPerGram($scope.goldPriceOutsideIndiaPerOunceInUSD,$scope.ozToGram);
-		var us_gold_1gm_inr = convertUSDtoINR(us_gold_1gm_usd,$scope.usdToInr)-$scope.customsDutyPer10Grams/10.0;
+		var us_gold_1gm_inr = convertUSDtoINR(us_gold_1gm_usd,$scope.usdToInr)-($scope.customsDutyPer10Grams/10.0);
 
 		return us_gold_1gm_inr;
 
@@ -121,8 +122,8 @@ goldApp.controller('gController', function($scope) {
 
 
 	function calculate22CtGramsFromForeignGold(){
-		var gold_22ct_from_24ct = $scope.goldPriceIndia24ctPerGramInINR / $scope.goldPriceIndia22ctPerGramInINR; 
-		var gold_22ct_from_profit = profitOfBuyingForeignGold() / $scope.goldPriceIndia22ctPerGramInINR; 
+		var gold_22ct_from_24ct = $scope.goldPriceIndia24ctPerGramInINR / $scope.goldPriceIndia22ctPerGramInINR;
+		var gold_22ct_from_profit = profitOfBuyingForeignGold() / $scope.goldPriceIndia22ctPerGramInINR;
 
 		return gold_22ct_from_24ct + gold_22ct_from_profit;
 	}
@@ -153,6 +154,8 @@ goldApp.controller('gController', function($scope) {
 		return (1/(valueAddition*vat));
 	}
 
+  ctrl.isProfitOrLoss
+
 });
 
 
@@ -176,14 +179,14 @@ goldApp.filter('soverign', ['$filter', function ($filter) {
   	return d.sov + " sov " + d.gms + " grams ";
   };
 }]);
- 
+
 
 goldApp.filter('percentage', ['$filter', function ($filter) {
   return function (input, decimals) {
     return $filter('number')(input * 100, decimals) + '%';
   };
 }]);
- 
+
 
 goldApp.filter('rupees', ['$filter', function ($filter) {
   return function (input, decimals) {

@@ -1,4 +1,3 @@
-
    {% comment %} an hack to display proper tag name {% endcomment %}
    <title>{{ page.title }}</title>
 
@@ -39,10 +38,10 @@
    {% if page.path == 'index.html'  %}
     <meta name="next" content="{{site.url}}{{site.posts.first.url}}"/>
     {% endif %}
-   
 
 
-  <!-- twitter meta --> 
+
+  <!-- twitter meta -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@{{site.twitter_id}}">
   <meta name="twitter:creator" content="@{{site.twitter_id}}">
@@ -50,7 +49,7 @@
   <meta name="twitter:title" content="{{ page.title }}">
 
   <!-- open graph meta -->
-  <meta property="og:type" content="article">  
+  <meta property="og:type" content="article">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{page.excerpt}}">
   <meta property="og:site_name" content="MaheshSubramaniya.com">
@@ -71,13 +70,65 @@
    <link href="{{site.url}}/rss.xml" rel="alternate"
 	 	title="{{site.site_name}}" type="application/rss+xml" />
 
-
-   <link rel="stylesheet" href="/css/foundation.css" />
-   <link rel="stylesheet" href="/css/sandbox.css" />
-   <link rel="stylesheet" href="/css/keys.css" type="text/css" />
-   <link rel="stylesheet" href="/css/syntax.css" />
-
-   <script src="/js/modernizr.js"></script>
-   <script src="/js/jquery.js"></script>
+<style>
 
 
+#content .post{
+  width: 100%;
+}
+
+#wrapper-home {
+  margin-right: 600px;
+/*  font-family: monospace;
+  font-size: 1.2em;*/
+  line-height: 24px;
+}
+
+#posts-display, .left {
+  float: left;
+  width: 100%;
+}
+#projects-display, .right {
+  float: right;
+  width: 600px;
+  margin-right: -600px;
+}
+
+#twitter{
+  font-size: 1em;
+  clear: both;
+}
+
+.excerpt{
+  font-style: italic;
+  font-size: 0.8em;
+}
+.entry .entry-date{
+  width: 3em;
+}
+
+.entry a{
+  margin-left: 10px;
+}
+
+#projects-display .entry a{
+  margin-left: 0;
+}
+
+ul.menu li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.post-header{
+  border-bottom: 2px solid;
+  text-align: center;
+}
+
+.post-title{
+  font-size: 100%;
+}
+
+</style>
