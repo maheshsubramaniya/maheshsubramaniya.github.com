@@ -6,24 +6,21 @@ layout: default
 
 <article class="post single">
 	<header class="post-header">
-		  <h2 class="post-title">{{ page.title }}</h2>
+		  <h3 class="post-title">{{ page.title }}</h3>
+		  <hr/>
 	</header>
 	<p>{{ content }}</p>
 
 
-
-	<small>
-		<div class="tags">
-			Tagged under:
-			{% for tag in page.tags  %}
-				<span>{{tag}},</span>
-			{% endfor %}
-		</div>
-
-	</small>
+  	<footer >
+		<small class="right published-date">
+			Published on: <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+		</small>
+  	</footer>
+  	<!-- by {{site.author}} -->
+</article>
 
 	<nav class="page-navigation">
-	        <div class="clear">&nbsp;</div>
 	        <div class="left">
 	        {% if page.previous.url %}
 	                <a href="{{page.previous.url}}" title="Previous Post:
@@ -37,22 +34,6 @@ layout: default
 	{{page.next.title}}">{{page.next.title}} &raquo; </a>
 	        {% endif %}
 	        </div>
-	        <div class="clear">&nbsp;</div>
-
 	</nav>
-
-  	<footer >
-
-		<small class="right">
-			Published on: <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-		</small>
-		
-		<div>
-			<a class="twitter-follow-button" href="https://twitter.com/{{site.twitter_id}}" title="{{site.twitter_id}}">@{{site.twitter_id}}</a>
-		</div>
-
-  	</footer>
-  	<!-- by {{site.author}} -->
-</article>
 
 </div>

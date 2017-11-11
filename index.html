@@ -9,8 +9,10 @@ id: index
 
 <div id="wrapper-home">
 
+	<h1>Mahesh Subramaniya</h1>
+
 	<div>
-			<h2>Projects</h2>
+			<h3>Hobby projects</h3>
 			{% for post in site.categories.projects %}
 					<article class="project-title">
 						<div class="entry">
@@ -19,8 +21,7 @@ id: index
 							{%else %}
 								{% assign url = post.url %}
 							{% endif %}
-								<a href="{{ url }}">{{ post.title }}</a>
-								<div class="excerpt">{{ post.excerpt }}</div>
+								<a href="{{ url }}">{{ post.title }}</a> - <span class="excerpt">{{ post.excerpt }}</span>
 						</div>
 
 					</article>
@@ -28,7 +29,7 @@ id: index
 	</div>
 
 	<div>
-		<h2>Posts</h2>
+		<h3>Posts</h3>
 			{% assign count = site.posts | size %}
 		{% for post in site.posts %}
 			{% unless post.categories contains 'projects' %}

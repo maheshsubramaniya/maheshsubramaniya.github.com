@@ -4,25 +4,17 @@
 		{% include header.html %}
 	</head>
 	<body>
-		{% if page.id == "index" %}
-			{% include blog-title.html %}
-		{% endif %}
-
 		<section id="content">
 			{{ content }}
 		</section>
 
 		<footer>
-			<div class="center" style="text-align:center;">
-			    <ul class="menu">
-			      <li></li>
-			      <li><a href="/" title="Home">Home</a></li>
-			      <li><a href="/about.html" title="About">About</a></li>
-			      <li><a href="/contact.html" title="Contact">Contact Me</a></li>
-			      <li><a href="https://www.twitter.com/msubramaniya" title="twitter">Twitter - @msubramaniya</a></li>
-			      <li><a href="/atom.xml" title="RSS">RSS</a></li>
-			    </ul>
-			    <small>© {{site.author}} - 2004 to today</small>
+			<div class="center page-navigation" style="text-align:center;">
+			      <a href="/" title="Home">Home</a>
+			      <a href="/about.html" title="About">About</a>
+			      <a href="/atom.xml" title="RSS">RSS</a>
+			      <a href="/contact.html" title="Contact">Contact Me</a>
+			      <a href="https://www.twitter.com/msubramaniya" title="twitter">Twitter - @msubramaniya</a>
 			  </div>
 		</footer>
 	</body>
