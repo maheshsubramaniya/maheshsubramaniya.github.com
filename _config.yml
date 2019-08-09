@@ -2,7 +2,7 @@ destination: ./_site
 lsi: false
 port: 4000
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge 
 permalink:   /article/:title.html
 url: http://www.maheshsubramaniya.com
 site_name: Mahesh Subramaniya

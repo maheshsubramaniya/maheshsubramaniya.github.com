@@ -20,6 +20,7 @@ source: http://jekyllrb.com/docs/installation/
 brew install ruby
 gem install jekyll
 gem install jekyll-sitemap
+gem install rouge 
 gem install rdiscount
 ```
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gmail Date actions chrome plugin
+title: Gmail Date actions chrome plugin (Deprecated)
 categories: ['projects']
 tags: [plugin,chrome,gmail,date,actions]
 excerpt: chome plugin to get today, yesterday, a week and last week email in one click
