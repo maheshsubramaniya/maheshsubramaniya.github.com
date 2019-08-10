@@ -77,6 +77,13 @@ article>.entry {line-height: 2em;}
 .post-header h3, .twitter {text-align: center; }
 .page-navigation{display:flex; justify-content:space-between; padding-top:1em; flex-direction:row; font-style:italic; }
 .excerpt,.published-date{font-style:italic; }
-.single { width: 40%; text-align: justify; margin-left: 1em; }
 img {width: 100%; }
+
+
+.single { width: 40%; text-align: justify; margin-left: 1em; }
+/*for screen width <= 840px */
+@media (max-width: 840px) {
+   .single { width: 100%; text-align: justify;margin-left: 0em;}
+}
+
 </style>
