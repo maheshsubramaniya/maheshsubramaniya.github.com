@@ -25,6 +25,7 @@ img {
     margin-left: auto; /* Aligns the image to the center */
     margin-right: auto; /* Aligns the image to the center */
 }
+@media (min-width: 600px) { img { max-width: 100%; } }
 
 .img-caption,figcaption{ font-style: oblique;font-size:80%;  text-align:center;}
 
@@ -133,4 +134,3 @@ th { border: 1px solid #333; text-align: left; padding: 20px; }
 #about > p:first-child > img { max-width: 50%; height: auto; border-radius: 50%; border: 2px solid darkolivegreen; margin: 1em 0; }
 
 /* @media (min-width: 600px) { #about > p:first-child > img { max-width: 100%; } } */
-@media (min-width: 600px) { img { max-width: 100%; } }
