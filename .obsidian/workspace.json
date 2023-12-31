@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dfc1036f27914546",
+        "id": "f0cfd56bc61a6506",
         "type": "tabs",
         "children": [
           {
-            "id": "103097e019706c74",
+            "id": "d8899db81dfb90e1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -152,13 +152,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "103097e019706c74",
+  "active": "d8899db81dfb90e1",
   "lastOpenFiles": [
+    "_posts/google/2010-11-12-javascript-create-dom-object-only-once.markdown",
+    "about.md",
     "_posts/ai/2023-12-30-Edge AI.md",
     "_posts/calc/2015-07-19-gold.md",
     "_posts/google/2008-01-05-make-quick-notes-to-google-notebook.markdown",
     "_posts/google/2005-10-03-tip-for-gmail-users-very-useful.markdown",
-    "about.md",
     "images/about-me-buddha.jpg",
     "css/style.css",
     "css/syntax.css",
