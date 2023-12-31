@@ -7,15 +7,13 @@ layout: default
 	<article class="post single">
 		<header class="post-header">
 			<h3 class="post-title">{{ page.title }}</h3>
+			<p class="title-info"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></p>
 			<hr/>
 		</header>
 		<p>{{ content }}</p>
 
 
 		<footer >
-			<small class="right published-date">
-				Posted on: <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-			</small>
 		</footer>
 		<!-- by {{site.author}} -->
 	</article>
