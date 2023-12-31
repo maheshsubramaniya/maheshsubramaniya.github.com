@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/ai/2023-12-30-Edge AI.md",
+                "file": "about.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/ai/2023-12-30-Edge AI.md",
+                "file": "about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/ai/2023-12-30-Edge AI.md",
+                "file": "about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/ai/2023-12-30-Edge AI.md"
+                "file": "about.md"
               }
             }
           },
@@ -160,20 +160,42 @@
   },
   "active": "3ce138a89d18b32e",
   "lastOpenFiles": [
-    "_posts/ai/Pasted image 20231230210907.png.md",
+    "_site/images/about-me-buddha.jpg",
+    "images/about-me-buddha.jpg",
+    "_site/images/IMG_6020_cleanup-2.JPG",
+    "images/IMG_6020_cleanup-2.JPG",
     "_posts/ai/2023-12-30-Edge AI.md",
-    "_posts/calc/2015-07-19-gold.md",
+    "_site/css/style.css",
+    "css/style.css",
+    "_site/images/edge-ai-cars.png",
     "images/edge-ai-cars.png",
-    "images/problem.jpg",
-    "_posts/misc/2019-08-09-problems-never-solved.md",
+    "_site/images/-edge-ai-cars.png",
+    "images/-edge-ai-cars.png",
+    "_site/images/DALL·E 2023-12-31 07.39.58 - A futuristic cityscape with advanced, intelligent vehicles and devices seamlessly integrated into everyday life, symbolizing the transformative impact.png",
+    "images/DALL·E 2023-12-31 07.39.58 - A futuristic cityscape with advanced, intelligent vehicles and devices seamlessly integrated into everyday life, symbolizing the transformative impact.png",
+    "Gemfile",
     "_posts/ai/Untitled.md",
+    "_site/article/Edge-AI.html",
+    "_site/article/problems-never-solved.html",
+    "_site/calc/goldbuy.html",
+    "_site/calc",
+    "_site/article/understanding-how-jars-are-loaded-into-jvm-from-a-directory.html",
+    "_site/article/when-to-refactor-the-code.html",
+    "_site/article/IE-heisenbug.html",
+    "_site/js/bower_components/angular/README.md",
+    "_site/js/bower_components/angucomplete-alt/README.md",
+    "_site/js/bower_components/angucomplete-alt/CONTRIBUTORS.md",
+    "_site/js/bower_components/angucomplete-alt/CONTRIBUTING.md",
+    "_site/images/you.png",
+    "_site/README.md",
+    "_posts/ai/Pasted image 20231230210907.png.md",
+    "_posts/calc/2015-07-19-gold.md",
+    "_posts/misc/2019-08-09-problems-never-solved.md",
     "_posts/ai/Untitled 1.md",
     "_templates/Blog Post.md",
     "_posts/ai/test.md",
     "_posts/ai/Edge AI Copy.md",
     "_posts/ai/Edge AI copy.md",
-    "_posts/programming/to-jekyll-filename.py",
-    "_templates",
     "_posts/tamil/2012-07-07-நான்-அறிந்தவை-1.md",
     "test.md",
     "Edge AI.md"

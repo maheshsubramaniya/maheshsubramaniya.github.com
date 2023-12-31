@@ -6,3 +6,5 @@ _reject
 *.sh
 .DS_Store
 .DS_Store/*
+Gemfile.lock
+.obsidian/workspace.json

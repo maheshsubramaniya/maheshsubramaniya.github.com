@@ -29,3 +29,7 @@ Running:
 ```
 jekyll serve
 ```
+or
+```
+bundle exec jekyll serve
+```
