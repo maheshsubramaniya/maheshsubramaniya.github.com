@@ -1,0 +1,125 @@
+/* Stylesheet credit: https://enrq.me */
+
+/** Light theme variables */
+:root { --fonts: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; --fonts-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+/** Light theme variables */
+:root { --base-color: #000; --base-color-light: rgba(0, 0, 0, 0.8); --base-color-lighter: rgba(0, 0, 0, 0.6); --base-color-hover: #eee; --base-color-nav: #37352f; --background-color: #fff; --background-color-blockquote: #f3f3f3; --background-color-nav-hover: rgba(55, 53, 47, 0.08); --background-color-table-even: #f1f1f1; }
+
+@media (prefers-color-scheme: dark) { :root { --base-color: #fff; --base-color-light: rgba(255, 255, 255, 0.8); --base-color-lighter: rgba(255, 255, 255, 0.6); --base-color-hover: #222; --base-color-nav: #fafafa; --background-color: #000; --background-color-blockquote: #222; --background-color-nav-hover: rgba(250, 250, 250, 0.08); --background-color-table-even: #222; } }
+
+.container { position: relative; z-index: 1; min-height: 100%; padding: 5px; display: block; overflow-x: scroll; width: 90%; max-width: 768px; margin-right: auto; margin-left: auto; }
+
+body div [class*=language-], body code[class*=language-] { font-size: 0.925rem; }
+
+footer { margin: 20px auto 20px; padding-top: 10px; text-align: right; }
+
+footer a { font-size: inherit; }
+
+img { max-width: 100%; }
+
+li > p { margin: 0; }
+
+a { color: var(--base-color-lighter); line-height: 150%; font-family: var(--fonts); font-style: normal; font-variant: normal; text-decoration: underline; }
+
+a:link { color: var(--base-color-lighter); }
+
+a:visited { color: var(--base-color-lighter); }
+
+a:hover { background: var(--base-color-hover); background-size: auto 4em; background-repeat: no-repeat; background-position: 0% 15px; }
+
+body { background: var(--background-color); color: var(--base-color); font-family: var(--fonts-body); font-weight: 400; margin: 0 auto; padding: 0; text-align: left; }
+
+.title { font-family: serif; font-size: 2.8rem; width: 100%; padding-bottom: 10px; margin-top: 50px; margin-bottom: 10px; }
+
+.title-info { font-size: 1rem; color: var(--base-color-lighter); margin-bottom: 34px; margin-top: 10px; }
+
+.reading-time { float: right; }
+
+.subtitle { color: var(--base-color-light); font-weight: 500; }
+
+h1 { font-family: var(--fonts); font-size: 40px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 1.1; }
+
+h2 { font-family: var(--fonts); font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 1.1; }
+
+h3 { font-family: var(--fonts); font-size: 25px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 1.1; }
+
+h4 { font-family: var(--fonts); font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 1.1; }
+
+h5 { font-family: var(--fonts); font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 1.1; }
+
+h6 { font-family: var(--fonts); font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 1; }
+
+p { color: var(--base-color-light); font-size: 1.15rem; line-height: 150%; font-family: var(--fonts); font-style: normal; font-variant: normal; }
+
+button { background-color: #f0f2f4; color: #404b59; border: 1px solid #f0f2f4; box-shadow: rgba(15, 15, 15, 0.1) 0px 1px 2px; border-radius: 6px; align-items: center; height: fit-content; min-width: 180px; font-size: large; font-weight: 500; padding: 12px; }
+
+button:hover { background-color: #66778c; color: #fff; }
+
+button.primary { background-color: #e16259; color: #fff; border: 1px solid #be5643; border-radius: 3px; align-items: center; height: fit-content; min-width: 180px; font-size: large; font-weight: 500; padding: 12px; }
+
+button.primary:hover { background-color: #cf534a; color: #fff; }
+
+form { font-size: 20px; }
+
+input, textarea { font-size: 18px; padding: 8px; margin: 10px auto; }
+
+input[type="checkbox"] { width: 15px; height: 15px; margin: 10px; }
+
+input[type="radio"] { width: 15px; height: 15px; margin: 10px; }
+
+pre { padding: 0px; }
+
+blockquote { background: var(--background-color-blockquote); border-left: 6px solid #ccc; margin: 1em 0; padding: 24px 20px; }
+
+blockquote p { display: inline; font-family: serif; }
+
+blockquote p > a { font-family: serif; }
+
+.nav { background-color: var(--background-color); overflow: hidden; }
+
+.nav-left { float: left; }
+
+.nav-right { float: right; }
+
+/* Style the links inside the navigation bar */
+.nav a { float: left; color: var(--base-color-nav); text-align: center; padding: 14px 16px; text-decoration: none; font-size: 15px; font-weight: 550; }
+
+/* Add a color to the active/current link */
+.nav a.active { color: var(--base-color-nav); }
+
+/* Change the color of links on hover */
+.nav a:hover { background-size: 1px; background-color: var(--background-color-nav-hover); }
+
+ul { font-family: var(--fonts); }
+
+li { font-family: var(--fonts); font-size: 1.15rem; line-height: 1.5; color: var(--base-color-light); }
+
+table { border: 1px solid #333; border-collapse: collapse; padding: 20px; }
+
+tr { border: 1px solid #333; padding: 10px; }
+
+tr:nth-child(even) { background-color: var(--background-color-table-even); }
+
+td { border: 1px solid #333; padding: 10px; }
+
+th { border: 1px solid #333; text-align: left; padding: 20px; }
+
+/* Nathan Lam June 2, 2017 Add this css for responsive embedded videos in your .css file. */
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.task-list { list-style: none; padding: 0; }
+
+.task-list-item { position: relative; line-height: 35px; padding-left: 35px; }
+
+.task-list-item-checkbox { position: absolute; left: 0; top: 0; }
+
+#about > p:first-child { text-align: center; }
+
+#about > p:first-child > img { max-width: 50%; height: auto; border-radius: 50%; border: 2px solid darkolivegreen; margin: 1em 0; }
+
+@media (min-width: 600px) { #about > p:first-child > img { max-width: 20%; } }
+
+/*# sourceMappingURL=style.css.map */
