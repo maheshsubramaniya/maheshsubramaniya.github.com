@@ -9,13 +9,12 @@ id: index
 
 <div id="wrapper-home">
 
-	<h1>Mahesh Subramaniya - <a href="https://www.twitter.com/msubramaniya" title="twitter" class="twitter">@msubramaniya</a></h1>
-	
-
 	<div>
-			<h3>Hobby projects</h3>
+			<h3>Hobbies/Projects</h3>
+			<ul>
+				<li>Lead Mentor for <a href="https://www.teameureka.org">First Lego League <em>Team Eureka</em></a></li>
 			{% for post in site.categories.projects %}
-					<article class="project-title">
+					<li><article class="project-title">
 						<div class="entry">
 							{% if post.project_url %}
 								{% assign url = post.project_url %}
@@ -24,11 +23,11 @@ id: index
 							{% endif %}
 								<a href="{{ url }}">{{ post.title }}</a> - <span class="excerpt">{{ post.excerpt }}</span>
 						</div>
-
 					</article>
+				</li>
 			{% endfor %}
-
-			More side projects at <a href="https://github.com/msubra">https://github.com/msubra</a>
+			<li>More projects at <a href="https://github.com/msubra">https://github.com/msubra</a></li>
+			</ul>
 	</div>
 
 	<div>
