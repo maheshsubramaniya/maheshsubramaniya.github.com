@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c4304fc9c6db9e49",
+        "id": "6ce9ee91ac08cd61",
         "type": "tabs",
         "children": [
           {
-            "id": "5efc9769e73c7c76",
+            "id": "3ce138a89d18b32e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -158,11 +158,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5efc9769e73c7c76",
+  "active": "3ce138a89d18b32e",
   "lastOpenFiles": [
+    "_posts/ai/Pasted image 20231230210907.png.md",
+    "_posts/ai/2023-12-30-Edge AI.md",
+    "_posts/calc/2015-07-19-gold.md",
+    "images/edge-ai-cars.png",
+    "images/problem.jpg",
+    "_posts/misc/2019-08-09-problems-never-solved.md",
     "_posts/ai/Untitled.md",
     "_posts/ai/Untitled 1.md",
-    "_posts/ai/2023-12-30-Edge AI.md",
     "_templates/Blog Post.md",
     "_posts/ai/test.md",
     "_posts/ai/Edge AI Copy.md",
