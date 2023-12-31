@@ -20,7 +20,7 @@ footer a { font-size: inherit; }
 
 
 img { 
-    max-width: 60%; 
+    max-width: 90%; 
     display: block; /* Makes the image a block element */
     margin-left: auto; /* Aligns the image to the center */
     margin-right: auto; /* Aligns the image to the center */
