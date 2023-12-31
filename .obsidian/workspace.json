@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "6ce9ee91ac08cd61",
+        "id": "dfc1036f27914546",
         "type": "tabs",
         "children": [
           {
-            "id": "3ce138a89d18b32e",
+            "id": "103097e019706c74",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "about.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "about.md"
-              }
+              "state": {}
             }
           },
           {
@@ -135,7 +127,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -158,8 +152,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3ce138a89d18b32e",
+  "active": "103097e019706c74",
   "lastOpenFiles": [
+    "_posts/ai/2023-12-30-Edge AI.md",
+    "_posts/calc/2015-07-19-gold.md",
+    "_posts/google/2008-01-05-make-quick-notes-to-google-notebook.markdown",
+    "_posts/google/2005-10-03-tip-for-gmail-users-very-useful.markdown",
+    "about.md",
     "images/about-me-buddha.jpg",
     "css/style.css",
     "css/syntax.css",
@@ -169,12 +168,9 @@
     "css/normalize.css",
     "css/keys.css",
     "css/foundation.min.css",
-    "css/foundation.css",
     "_site/images/about-me-buddha.jpg",
-    "_site/css/style.css",
     "_site/images/IMG_6020_cleanup-2.JPG",
     "images/IMG_6020_cleanup-2.JPG",
-    "_posts/ai/2023-12-30-Edge AI.md",
     "_site/images/edge-ai-cars.png",
     "images/edge-ai-cars.png",
     "_site/images/-edge-ai-cars.png",
@@ -188,7 +184,6 @@
     "_site/js/bower_components/angucomplete-alt/CONTRIBUTING.md",
     "_site/README.md",
     "_posts/ai/Pasted image 20231230210907.png.md",
-    "_posts/calc/2015-07-19-gold.md",
     "_posts/misc/2019-08-09-problems-never-solved.md",
     "_posts/ai/Untitled 1.md",
     "_templates/Blog Post.md",
