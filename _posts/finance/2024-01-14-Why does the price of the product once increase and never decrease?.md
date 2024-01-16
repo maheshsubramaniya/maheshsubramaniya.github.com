@@ -13,7 +13,8 @@ tags:
 A product you bought ten years ago costs more today. We all know inflation causes price increases. 
 
 ![[Screenshot 2024-01-15 at 6.48.33 PM.png]]
-******(calculator: https://smartasset.com/investing/inflation-calculator)
+
+(calculator: https://smartasset.com/investing/inflation-calculator)
 
 
 > [!NOTE] Why does drop in inflation not decrease the price?
