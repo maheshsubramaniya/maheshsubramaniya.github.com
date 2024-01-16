@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
-                "mode": "preview",
+                "file": "_posts/ai/2023-12-30-Edge AI.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
+                "file": "_posts/ai/2023-12-30-Edge AI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
+                "file": "_posts/ai/2023-12-30-Edge AI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md"
+                "file": "_posts/ai/2023-12-30-Edge AI.md"
               }
             }
           },
@@ -163,6 +163,9 @@
   },
   "active": "80ad4b4bf7fe2ca2",
   "lastOpenFiles": [
+    "_site/article/inflation-price-effect.html",
+    "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
+    "_posts/finance/2024-01-14-inflation-price-effect.md",
     "_site/article/Why-does-the-price-of-the-product-once-increase-and-never-decrease.html",
     "_site/images/Vintage Machine Knobs (1).png",
     "_site/Screenshot 2024-01-15 at 7.04.42 PM.png",
@@ -172,7 +175,6 @@
     "_posts/google/2008-04-09-google-app-engine-run-your-application-on-google-infrastructure.markdown",
     "_posts/google/2005-10-03-tip-for-gmail-users-very-useful.markdown",
     "_posts/google/2005-06-18-experts-guide-to-google-search-engine.md",
-    "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
     "_posts/finance/Why does the price of the product once increase and never decrease?.md",
     "Screenshot 2024-01-15 at 7.04.42 PM.png",
     "_posts/finance/Interest rates vs US Dollar.md",
@@ -198,7 +200,6 @@
     "css/style.css",
     "css/syntax.css",
     "css/screen.css",
-    "css/sandbox.css",
     "_posts/ai/Untitled.md",
     "_site/js/bower_components/angular/README.md",
     "_site/js/bower_components/angucomplete-alt/README.md",
@@ -208,7 +209,6 @@
     "_posts/ai/Pasted image 20231230210907.png.md",
     "_posts/misc/2019-08-09-problems-never-solved.md",
     "_posts/ai/Untitled 1.md",
-    "_templates/Blog Post.md",
-    "_posts/ai/test.md"
+    "_templates/Blog Post.md"
   ]
 }

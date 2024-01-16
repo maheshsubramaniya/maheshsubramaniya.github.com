@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Why does the price of the product once increase and never decrease?
+title: Why does the price of the product once increases never decrease?
 categories:
   - finance
-excerpt: Why does the price of the product once increase and never decrease?
+excerpt: Why does the price of the product once increases never decrease?
 tags:
   - finance
   - inflation
