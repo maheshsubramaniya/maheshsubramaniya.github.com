@@ -1,0 +1,5 @@
+[US Dollar became world's trading currency since it helped Britain win World War 2, with and agreement that USD will replace British Sterling/Pound as trading currency](https://youtu.be/xguam0TKMw8?t=714). That IMO is a strategic move. 
+
+Then comes the next strategic move during Nixon period. [The decision to end the convertibility of the US dollar to gold was made by President Richard Nixon and his economic advisers in August 1971](https://www.federalreservehistory.org/essays/gold-convertibility-ends). Ending World War 2 Bretton Woods system.
+
+The decision was made in response to the deteriorating US balance of payments, combined with military spending and foreign aid, which resulted in a large supply of dollars around the world. The gold supply had increased only marginally, and eventually, there were more foreign-held dollars than the United States had gold. The country was vulnerable to a run on gold and there was a loss of confidence in the US government’s ability to meet its obligations, thereby threatening both the dollar’s position as reserve currency and the overall Bretton Woods system.
