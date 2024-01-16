@@ -50,7 +50,7 @@ Deflation is having a negative inflation rate. During the great depression, many
 
 
 ![inflation and disinflation diagram](https://www.dineshbakshi.com/images/stories/economics_diagrams/disinflation_graph.png)
-credit: (https://www.dineshbakshi.com)[https://www.dineshbakshi.com]
+credit: [https://www.dineshbakshi.com](https://www.dineshbakshi.com)
 {:class="img-caption"}
 
 [Recently, in 2021, Japan had a brief disinflation period.](https://ycharts.com/indicators/japan_inflation_rate#:~:text=Japan%20Inflation%20Rate%20is%20at,long%20term%20average%20of%202.42%25.)
