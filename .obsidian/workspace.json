@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/finance/Why does the price of the product once increase and never decrease?.md",
+                "file": "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/finance/Why does the price of the product once increase and never decrease?.md",
+                "file": "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/finance/Why does the price of the product once increase and never decrease?.md",
+                "file": "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/finance/Why does the price of the product once increase and never decrease?.md"
+                "file": "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md"
               }
             }
           },
@@ -177,12 +177,14 @@
   },
   "active": "4def8e6e154343de",
   "lastOpenFiles": [
+    "_posts/google/2005-06-18-experts-guide-to-google-search-engine.md",
+    "_posts/finance/Why does the price of the product once increase and never decrease?.md",
+    "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
+    "_posts/finance/What happens to the US Dollar when the Debt ceiling limit is hit?.md",
     "Screenshot 2024-01-15 at 7.04.42 PM.png",
     "_posts/finance/Interest rates vs US Dollar.md",
     "_posts/finance/Short history of how US Dollar became world's trading currency.md",
     "_posts/finance/The Trinity - Interest Rate, Taxes and Dollar Supply.md",
-    "_posts/finance/What happens to the US Dollar when the Debt ceiling limit is hit?.md",
-    "_posts/finance/Why does the price of the product once increase and never decrease?.md",
     "Screenshot 2024-01-15 at 6.48.33 PM.png",
     "images/Vintage Machine Knobs (1).png",
     "Vintage Machine Knobs.png",
@@ -195,7 +197,6 @@
     "_site/Ingenious idea (1).png",
     "_site/Untitled.html",
     "Pasted image 20231231211407.png",
-    "Pasted image 20231231211352.png",
     "_posts/finance/[[Interest.md",
     "_posts/finance/Interest.md",
     "Untitled.md",
@@ -222,7 +223,6 @@
     "_posts/ai/Untitled 1.md",
     "_templates/Blog Post.md",
     "_posts/ai/test.md",
-    "_posts/ai/Edge AI Copy.md",
-    "_posts/ai/Edge AI copy.md"
+    "_posts/ai/Edge AI Copy.md"
   ]
 }

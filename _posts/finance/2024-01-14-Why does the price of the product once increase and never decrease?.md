@@ -1,3 +1,15 @@
+---
+layout: post
+title: Why does the price of the product once increase and never decrease?
+categories:
+  - finance
+excerpt: Why does the price of the product once increase and never decrease?
+tags:
+  - finance
+  - inflation
+  - economy
+---
+
 A product you bought ten years ago costs more today. We all know inflation causes price increases. 
 
 ![[Screenshot 2024-01-15 at 6.48.33 PM.png]]
