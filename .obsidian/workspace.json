@@ -13,28 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/finance/What happens to the US Dollar when the Debt ceiling limit is hit?.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4def8e6e154343de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -175,12 +161,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4def8e6e154343de",
+  "active": "80ad4b4bf7fe2ca2",
   "lastOpenFiles": [
-    "_posts/google/2005-06-18-experts-guide-to-google-search-engine.md",
-    "_posts/finance/Why does the price of the product once increase and never decrease?.md",
-    "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
+    "_site/article/Why-does-the-price-of-the-product-once-increase-and-never-decrease.html",
+    "_site/images/Vintage Machine Knobs (1).png",
+    "_site/Screenshot 2024-01-15 at 7.04.42 PM.png",
+    "_site/Screenshot 2024-01-15 at 6.48.33 PM.png",
+    "_posts/ai/2023-12-30-Edge AI.md",
     "_posts/finance/What happens to the US Dollar when the Debt ceiling limit is hit?.md",
+    "_posts/google/2008-04-09-google-app-engine-run-your-application-on-google-infrastructure.markdown",
+    "_posts/google/2005-10-03-tip-for-gmail-users-very-useful.markdown",
+    "_posts/google/2005-06-18-experts-guide-to-google-search-engine.md",
+    "_posts/finance/2024-01-14-Why does the price of the product once increase and never decrease?.md",
+    "_posts/finance/Why does the price of the product once increase and never decrease?.md",
     "Screenshot 2024-01-15 at 7.04.42 PM.png",
     "_posts/finance/Interest rates vs US Dollar.md",
     "_posts/finance/Short history of how US Dollar became world's trading currency.md",
@@ -193,25 +186,19 @@
     "_site/Vintage Machine Knobs.png",
     "_site/Vintage Machine Knobs (1).png",
     "_site/Pasted image 20231231211407.png",
-    "_site/Pasted image 20231231211352.png",
-    "_site/Ingenious idea (1).png",
     "_site/Untitled.html",
-    "Pasted image 20231231211407.png",
     "_posts/finance/[[Interest.md",
     "_posts/finance/Interest.md",
     "Untitled.md",
     "_posts/finance",
     "_posts/google/2010-11-12-javascript-create-dom-object-only-once.markdown",
     "about.md",
-    "_posts/ai/2023-12-30-Edge AI.md",
     "_posts/calc/2015-07-19-gold.md",
     "_posts/google/2008-01-05-make-quick-notes-to-google-notebook.markdown",
-    "_posts/google/2005-10-03-tip-for-gmail-users-very-useful.markdown",
     "css/style.css",
     "css/syntax.css",
     "css/screen.css",
     "css/sandbox.css",
-    "css/pygments_style.css",
     "_posts/ai/Untitled.md",
     "_site/js/bower_components/angular/README.md",
     "_site/js/bower_components/angucomplete-alt/README.md",
@@ -222,7 +209,6 @@
     "_posts/misc/2019-08-09-problems-never-solved.md",
     "_posts/ai/Untitled 1.md",
     "_templates/Blog Post.md",
-    "_posts/ai/test.md",
-    "_posts/ai/Edge AI Copy.md"
+    "_posts/ai/test.md"
   ]
 }
