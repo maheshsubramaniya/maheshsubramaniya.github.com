@@ -4,18 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "f0cfd56bc61a6506",
+        "id": "4dcdaf816f20b4ac",
         "type": "tabs",
         "children": [
           {
-            "id": "d8899db81dfb90e1",
+            "id": "80ad4b4bf7fe2ca2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_posts/finance/What happens to the US Dollar when the Debt ceiling limit is hit?.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4def8e6e154343de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/finance/Why does the price of the product once increase and never decrease?.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/finance/Why does the price of the product once increase and never decrease?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/finance/Why does the price of the product once increase and never decrease?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/finance/Why does the price of the product once increase and never decrease?.md"
+              }
             }
           },
           {
@@ -152,32 +175,42 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d8899db81dfb90e1",
+  "active": "4def8e6e154343de",
   "lastOpenFiles": [
+    "Screenshot 2024-01-15 at 7.04.42 PM.png",
+    "_posts/finance/Interest rates vs US Dollar.md",
+    "_posts/finance/Short history of how US Dollar became world's trading currency.md",
+    "_posts/finance/The Trinity - Interest Rate, Taxes and Dollar Supply.md",
+    "_posts/finance/What happens to the US Dollar when the Debt ceiling limit is hit?.md",
+    "_posts/finance/Why does the price of the product once increase and never decrease?.md",
+    "Screenshot 2024-01-15 at 6.48.33 PM.png",
+    "images/Vintage Machine Knobs (1).png",
+    "Vintage Machine Knobs.png",
+    "Untitled.canvas",
+    "_posts/misc/2013-12-01-2008-i-hated-macbookair-now-loving-it.md",
+    "_site/Vintage Machine Knobs.png",
+    "_site/Vintage Machine Knobs (1).png",
+    "_site/Pasted image 20231231211407.png",
+    "_site/Pasted image 20231231211352.png",
+    "_site/Ingenious idea (1).png",
+    "_site/Untitled.html",
+    "Pasted image 20231231211407.png",
+    "Pasted image 20231231211352.png",
+    "_posts/finance/[[Interest.md",
+    "_posts/finance/Interest.md",
+    "Untitled.md",
+    "_posts/finance",
     "_posts/google/2010-11-12-javascript-create-dom-object-only-once.markdown",
     "about.md",
     "_posts/ai/2023-12-30-Edge AI.md",
     "_posts/calc/2015-07-19-gold.md",
     "_posts/google/2008-01-05-make-quick-notes-to-google-notebook.markdown",
     "_posts/google/2005-10-03-tip-for-gmail-users-very-useful.markdown",
-    "images/about-me-buddha.jpg",
     "css/style.css",
     "css/syntax.css",
     "css/screen.css",
     "css/sandbox.css",
     "css/pygments_style.css",
-    "css/normalize.css",
-    "css/keys.css",
-    "css/foundation.min.css",
-    "_site/images/about-me-buddha.jpg",
-    "_site/images/IMG_6020_cleanup-2.JPG",
-    "images/IMG_6020_cleanup-2.JPG",
-    "_site/images/edge-ai-cars.png",
-    "images/edge-ai-cars.png",
-    "_site/images/-edge-ai-cars.png",
-    "images/-edge-ai-cars.png",
-    "_site/images/DALL·E 2023-12-31 07.39.58 - A futuristic cityscape with advanced, intelligent vehicles and devices seamlessly integrated into everyday life, symbolizing the transformative impact.png",
-    "images/DALL·E 2023-12-31 07.39.58 - A futuristic cityscape with advanced, intelligent vehicles and devices seamlessly integrated into everyday life, symbolizing the transformative impact.png",
     "_posts/ai/Untitled.md",
     "_site/js/bower_components/angular/README.md",
     "_site/js/bower_components/angucomplete-alt/README.md",
@@ -190,9 +223,6 @@
     "_templates/Blog Post.md",
     "_posts/ai/test.md",
     "_posts/ai/Edge AI Copy.md",
-    "_posts/ai/Edge AI copy.md",
-    "_posts/tamil/2012-07-07-நான்-அறிந்தவை-1.md",
-    "test.md",
-    "Edge AI.md"
+    "_posts/ai/Edge AI copy.md"
   ]
 }
