@@ -11,7 +11,7 @@ Back in 2019, I jotted down a fleeting reflection on a question that may seem tr
 
 Asking these questions lead to inspect *"What events create new problems once it is solved?"*. I am revisiting that thought to see if anything has changed in my perception and try to avoid confirmation bias. This time, I leveraged AI technology to debate that with me.
 
-I asked AI this prompt.
+I asked AI to debate my hypothesis statement:
 
 > “Do we solve the problem or transform it to another state?” Debate this statement with me.
 
