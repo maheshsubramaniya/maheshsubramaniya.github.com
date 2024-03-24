@@ -1,21 +1,30 @@
 /* Stylesheet credit: https://enrq.me */
 /** Light theme variables */
 :root {
-    --fonts: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    --fonts-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    /* --fonts: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    --fonts-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol"; */
+
+    --fonts: "Playfair Display", serif;
+    --fonts-body: "Playfair Display", serif;
 }
+
 /** Light theme variables */
 :root {
     --base-color: #000;
     --base-color-light: rgba(0, 0, 0, 0.8);
-    --base-color-lighter: rgba(0, 0, 0, 0.6);
+    --base-color-lighter: #2547cf;
     --base-color-hover: #eee;
     --base-color-nav: #37352f;
-    --background-color: #fff;
-    --background-color-blockquote: #f3f3f3;
+    --background-color: #f8f5d7;
+    --background-color-blockquote: #afc0bb47;
     --background-color-nav-hover: rgba(55, 53, 47, 0.08);
     --background-color-table-even: #f1f1f1;
 }
+
 @media (prefers-color-scheme: dark) {
     :root {
         --base-color: #fff;
@@ -27,19 +36,26 @@
         --background-color-blockquote: #222;
         --background-color-nav-hover: rgba(250, 250, 250, 0.08);
         --background-color-table-even: #222;
-   }
+    }
 }
 
 body {
-    margin:0;
+    margin: 0;
     background: var(--background-color);
     color: var(--base-color);
     font-family: var(--fonts-body);
     font-weight: 400;
-    margin:2px;
+    font-size: 1.25rem;
+    margin: 2px;
     margin: 0 auto;
     padding: 0;
-    max-width: 600px;
+    /* max-width: 600px; */
+}
+
+#content {
+    font-size: 1rem;
+    line-height: 120%;
+    width: 75%;
 }
 
 .container {
@@ -52,62 +68,73 @@ body {
     overflow-x: scroll;
     /* width: 90%; */
     /* max-width: 435px; */
-    margin:1cap;
+    margin: 1cap;
     /* margin-right: auto;
     margin-left: auto; */
 }
-body div [class*=language-], body code[class*=language-] {
-    font-size: 0.925rem;
+
+body div [class*="language-"],
+body code[class*="language-"] {
+    /* font-size: 0.925rem; */
 }
+
 footer {
     margin: 20px auto 20px;
     padding-top: 10px;
     text-align: right;
 }
+
 footer a {
     font-size: inherit;
 }
+
 img {
-    width: 90%;
-    max-width: 100%;
+    /* width: 50%; */
+    max-width: 60%;
     display: block;
-   /* Makes the image a block element */
+    /* Makes the image a block element */
     margin-left: auto;
-   /* Aligns the image to the center */
+    /* Aligns the image to the center */
     margin-right: auto;
-   /* Aligns the image to the center */
+    /* Aligns the image to the center */
 }
+
 @media (max-width: 600px) {
     img {
         width: 100%;
     }
 
-    nav.nav-left a{
+    nav.nav-left a {
         font-size: 14px;
     }
-   
 }
-.img-caption,figcaption{
+
+.img-caption,
+figcaption {
     font-style: oblique;
-   font-size:80%;
-    text-align:center;
+    font-size: 80%;
+    text-align: center;
 }
+
 .img-caption a {
     color: var(--base-color-lighter);
     font-family: var(--fonts);
     font-style: oblique;
     font-variant: oblique;
 }
+
 li > p {
     margin: 0;
 }
+
 a.nostyle {
-   font-size: 30px !important;
-   background-size: 0em 0em;
-   font-family: var(--fonts);
+    font-size: 30px !important;
+    background-size: 0em 0em;
+    font-family: var(--fonts);
     font-weight: 700;
     line-height: 1.1;
 }
+
 a {
     color: var(--base-color-lighter);
     line-height: 150%;
@@ -116,18 +143,22 @@ a {
     font-variant: normal;
     text-decoration: underline;
 }
+
 a:link {
     color: var(--base-color-lighter);
 }
+
 a:visited {
     color: var(--base-color-lighter);
 }
+
 a:hover {
     background: var(--base-color-hover);
     background-size: auto 4em;
     background-repeat: no-repeat;
     background-position: 0% 15px;
 }
+
 .title {
     font-family: serif;
     font-size: 2.8rem;
@@ -136,20 +167,31 @@ a:hover {
     margin-top: 50px;
     margin-bottom: 10px;
 }
-.title-info {
-    font-size: 1rem;
-    color: var(--base-color-lighter);
-    margin-bottom: 34px;
-    margin-top: 10px;
+
+.post-header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: baseline;
+    border-bottom: black 1px solid;
+    padding-bottom: 2px;
 }
-.reading-time, .right {
+.title-info {
+    padding: 5px;
+}
+
+.reading-time,
+.right {
     float: right;
 }
-.subtitle, .post-title {
+
+.subtitle,
+.post-title {
     color: var(--base-color-light);
     font-weight: 500;
 }
-h1, .h1 {
+
+h1,
+.h1 {
     font-family: var(--fonts);
     font-size: 40px;
     font-style: normal;
@@ -157,7 +199,9 @@ h1, .h1 {
     font-weight: 700;
     line-height: 1.1;
 }
-h2, .h2 {
+
+h2,
+.h2 {
     font-family: var(--fonts);
     font-size: 30px;
     font-style: normal;
@@ -165,6 +209,7 @@ h2, .h2 {
     font-weight: 700;
     line-height: 1.1;
 }
+
 h3 {
     font-family: var(--fonts);
     font-size: 25px;
@@ -173,6 +218,7 @@ h3 {
     font-weight: 700;
     line-height: 1.1;
 }
+
 h4 {
     font-family: var(--fonts);
     font-size: 20px;
@@ -181,6 +227,7 @@ h4 {
     font-weight: 700;
     line-height: 1.1;
 }
+
 h5 {
     font-family: var(--fonts);
     font-size: 18px;
@@ -189,6 +236,7 @@ h5 {
     font-weight: 700;
     line-height: 1.1;
 }
+
 h6 {
     font-family: var(--fonts);
     font-size: 14px;
@@ -197,14 +245,7 @@ h6 {
     font-weight: 700;
     line-height: 1;
 }
-p {
-    color: var(--base-color-light);
-    font-size: 1.15rem;
-    line-height: 150%;
-    font-family: var(--fonts);
-    font-style: normal;
-    font-variant: normal;
-}
+
 button {
     background-color: #f0f2f4;
     color: #404b59;
@@ -218,10 +259,12 @@ button {
     font-weight: 500;
     padding: 12px;
 }
+
 button:hover {
     background-color: #66778c;
     color: #fff;
 }
+
 button.primary {
     background-color: #e16259;
     color: #fff;
@@ -234,54 +277,71 @@ button.primary {
     font-weight: 500;
     padding: 12px;
 }
+
 button.primary:hover {
     background-color: #cf534a;
     color: #fff;
 }
+
 form {
     font-size: 20px;
 }
-input, textarea {
+
+input,
+textarea {
     font-size: 18px;
     padding: 8px;
     margin: 10px auto;
 }
+
 input[type="checkbox"] {
     width: 15px;
     height: 15px;
     margin: 10px;
 }
+
 input[type="radio"] {
     width: 15px;
     height: 15px;
     margin: 10px;
 }
+
 pre {
     padding: 0px;
 }
+
 blockquote {
     background: var(--background-color-blockquote);
     border-left: 6px solid #ccc;
     margin: 1em 0;
     padding: 24px 20px;
+    font-size: 1.5em;
+    font-kerning: auto;
+    /* font-weight: 800; */
 }
+
 blockquote p {
     display: inline;
     font-family: serif;
 }
+
 blockquote p > a {
     font-family: serif;
 }
+
 .nav {
     background-color: var(--background-color);
     overflow: hidden;
 }
+
 .nav-left {
     float: left;
 }
+
 .nav-right {
     float: right;
 }
+
 /* Style the links inside the navigation bar */
 .nav a {
     float: left;
@@ -292,45 +352,55 @@ blockquote p > a {
     font-size: 15px;
     font-weight: 550;
 }
+
 /* Add a color to the active/current link */
 .nav a.active {
     color: var(--base-color-nav);
 }
+
 /* Change the color of links on hover */
 .nav a:hover {
     background-size: 1px;
     background-color: var(--background-color-nav-hover);
 }
+
 ul {
     font-family: var(--fonts);
 }
+
 li {
     font-family: var(--fonts);
-    font-size: 1.15rem;
+    /* font-size: 1.15rem; */
     line-height: 1.5;
     color: var(--base-color-light);
 }
+
 table {
     border: 1px solid #333;
     border-collapse: collapse;
     padding: 20px;
 }
+
 tr {
     border: 1px solid #333;
     padding: 10px;
 }
+
 tr:nth-child(even) {
     background-color: var(--background-color-table-even);
 }
+
 td {
     border: 1px solid #333;
     padding: 10px;
 }
+
 th {
     border: 1px solid #333;
     text-align: left;
     padding: 20px;
 }
+
 /* Nathan Lam June 2, 2017 Add this css for responsive embedded videos in your .css file. */
 .embed-container {
     position: relative;
@@ -339,30 +409,38 @@ th {
     overflow: hidden;
     max-width: 100%;
 }
-.embed-container iframe, .embed-container object, .embed-container embed {
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
+
 .task-list {
     list-style: none;
     padding: 0;
 }
+
 .task-list-item {
     position: relative;
     line-height: 35px;
     padding-left: 35px;
 }
+
 .task-list-item-checkbox {
     position: absolute;
     left: 0;
     top: 0;
 }
+
 #about > p:first-child {
     text-align: center;
 }
+
 #about > p:first-child > img {
     max-width: 50%;
     height: auto;

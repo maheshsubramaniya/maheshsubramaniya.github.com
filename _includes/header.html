@@ -1,74 +1,76 @@
-   {% comment %} an hack to display proper tag name {% endcomment %}
-   <title>{{ page.title }}</title>
+{% comment %} an hack to display proper tag name {% endcomment %}
+<title>{{ page.title }}</title>
 
-	<meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="author" content="{{site.author}}"/>
-  <meta name="copyright" content="&copy; Copyright 2004 to Present"/>
+<meta name="author" content="{{site.author}}" />
+<meta name="copyright" content="&copy; Copyright 2004 to Present" />
 
-  <!-- all the mobile settings -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+<!-- all the mobile settings -->
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
-  <!-- <meta name="MobileOptimized" content="320"> -->
+<!-- <meta name="MobileOptimized" content="320"> -->
 
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="date" content="{{ page.date | date: '%Y' }}-{{ page.date | date: '%m' }}-{{ page.date | date: '%d' }}" />
-	<meta name="robots" content="{{ site.google_robots}}" />
-  <meta name="description" content="{{ page.excerpt}}" />
-   {% if page.tags %}
-  <meta name="keywords" content="{{page.tags | join:","}}" />
-   {% else %}
-   <meta name="keywords" content="J2EE, J2EE Frameworks, Enterprise Architecture, Distributed, Cloud Computing, Performance" />
-   {% endif %}
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="date" content="{{ page.date | date: '%Y' }}-{{ page.date | date: '%m' }}-{{ page.date | date: '%d' }}" />
+<meta name="robots" content="{{ site.google_robots}}" />
+<meta name="description" content="{{ page.excerpt}}" />
+{% if page.tags %}
+<meta name="keywords" content="{{page.tags | join:" ,"}}" />
+{% else %}
+<meta name="keywords"
+    content="J2EE, J2EE Frameworks, Enterprise Architecture, Distributed, Cloud Computing, Performance" />
+{% endif %}
 
-   <!-- linking posts -->
-   {% if page.previous.url  %}
-      <meta name="prev" content="{{site.url}}{{page.previous.url}}"/>
-   {% endif %}
+<!-- linking posts -->
+{% if page.previous.url %}
+<meta name="prev" content="{{site.url}}{{page.previous.url}}" />
+{% endif %}
 
-   {% if page.next.url  %}
-      <meta name="next" content="{{site.url}}{{page.next.url}}"/>
-   {% endif %}
+{% if page.next.url %}
+<meta name="next" content="{{site.url}}{{page.next.url}}" />
+{% endif %}
 
-   {% if page.path == 'index.html'  %}
-    <meta name="next" content="{{site.url}}{{site.posts.first.url}}"/>
-    {% endif %}
-
-
-
-  <!-- twitter meta -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@{{site.twitter_id}}">
-  <meta name="twitter:creator" content="@{{site.twitter_id}}">
-  <meta name="twitter:description" content="{{page.excerpt}}">
-  <meta name="twitter:title" content="{{ page.title }}">
-
-  <!-- open graph meta -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{page.excerpt}}">
-  <meta property="og:site_name" content="MaheshSubramaniya.com">
-  <meta property="og:image" content="https://pbs.twimg.com/profile_images/287366742/pro-head_bigger.jpeg"/>
-
-  {% if page.path contains '_posts' %}
-  <meta name="twitter:url" content="{{site.url}}{{page.url}}">
-  <meta property="og:url" content="{{site.url}}{{page.url}}">
-  {% else %}
-  <meta name="twitter:url" content="{{site.url}}">
-  <meta property="og:url" content="{{site.url}}">
-  {% endif %}
+{% if page.path == 'index.html' %}
+<meta name="next" content="{{site.url}}{{site.posts.first.url}}" />
+{% endif %}
 
 
-<link href="{{site.url}}/atom.xml" rel="alternate"
-   title="{{site.site_name}}" type="application/atom+xml" />
 
-<link href="{{site.url}}/rss.xml" rel="alternate"
-   title="{{site.site_name}}" type="application/rss+xml" />
+<!-- twitter meta -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{site.twitter_id}}">
+<meta name="twitter:creator" content="@{{site.twitter_id}}">
+<meta name="twitter:description" content="{{page.excerpt}}">
+<meta name="twitter:title" content="{{ page.title }}">
+
+<!-- open graph meta -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{page.excerpt}}">
+<meta property="og:site_name" content="MaheshSubramaniya.com">
+<meta property="og:image" content="https://pbs.twimg.com/profile_images/287366742/pro-head_bigger.jpeg" />
+
+{% if page.path contains '_posts' %}
+<meta name="twitter:url" content="{{site.url}}{{page.url}}">
+<meta property="og:url" content="{{site.url}}{{page.url}}">
+{% else %}
+<meta name="twitter:url" content="{{site.url}}">
+<meta property="og:url" content="{{site.url}}">
+{% endif %}
+
+
+<link href="{{site.url}}/atom.xml" rel="alternate" title="{{site.site_name}}" type="application/atom+xml" />
+
+<link href="{{site.url}}/rss.xml" rel="alternate" title="{{site.site_name}}" type="application/rss+xml" />
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap')
+</style>
 
 <link rel="stylesheet" type="text/css" href="/css/style.css">
-
