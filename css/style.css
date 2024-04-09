@@ -90,7 +90,7 @@ footer a {
 
 img {
     /* width: 50%; */
-    max-width: 60%;
+    max-width: 40%;
     display: block;
     /* Makes the image a block element */
     margin-left: auto;
@@ -104,6 +104,7 @@ img {
 @media (max-width: 600px) {
     img {
         width: 100%;
+        max-width: 100%;
     }
 
     nav.nav-left a {
@@ -193,6 +194,10 @@ a:hover {
     color: var(--base-color-light);
     font-weight: 500;
     text-align: left;
+}
+
+.post-title a{
+    text-decoration: none;
 }
 
 h1,

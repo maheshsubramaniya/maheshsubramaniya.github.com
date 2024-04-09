@@ -5,7 +5,7 @@ categories:
 title: Problems never solved but transformed - Revisit the statement
 ---
 
-<img src="../../images/m6943_cartoon_is_in_an_apartment-msubra.png" style="width:20vw;">
+<img src="../../images/m6943_cartoon_is_in_an_apartment-msubra.png" style="">
 
 [Back in 2019, I jotted down a fleeting reflection on a question](problems-never-solved.html) that may seem trivial at first glance. It's the kind of question that feels almost too obvious, woven as it is into the fabric of our daily existence, which is perhaps why it can feel trivial to contemplate. Yet, take a moment to consider it:
 

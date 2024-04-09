@@ -4,7 +4,7 @@ title: Problems never solved, they transform
 categories: ['misc']
 ---
 
-<img src="../images/problem.jpg">
+<img src="../images/problem.jpg" style="width:30%;">
 
 In the world full of problems, solving a problem doesn't erase the problem, rather transforms into another problem, more like the conservation of energy. Let me give you a simple example.
 
