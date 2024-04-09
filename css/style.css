@@ -381,8 +381,9 @@ ul {
 li {
     font-family: var(--fonts);
     /* font-size: 1.15rem; */
-    line-height: 1.5;
+    /* line-height: 1.5; */
     color: var(--base-color-light);
+    padding-bottom: 1vw;
 }
 
 table {
